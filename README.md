@@ -15,6 +15,10 @@
 1) Student should able to chat with dev export to get clarifications.
 2) Student should able to wirte the coding competations to improve the coding skills.
 
+##### Phase 4
+1) Teacher should able to register and manage this profile
+2) Teacher should able to manage his students.
+
 
 
 
