@@ -2,18 +2,19 @@
 
 ## List of funcanalities
 ##### Phase 1
-1) User should able to select the course and topic to view the learning videos.
-2) User should able to download the sample codes for that topic.
-3) User should able to write the code in code editor to compile and run the code.
+1) Student should able to select the course and topic to view the learning videos.
+2) Student should able to download the sample codes for that topic.
+3) Student should able to write the code in code editor to compile and run the code.
 
 ##### Phase 2
-1) User should able to login and registor 
-2) User should able to upload resume, based on resume we hv to parse user detials and store in DB and create profile outof it.
-3) User should able to take the quize and coding test.
+1) Student should able to login and registor 
+2) Student should able to upload resume, based on resume we hv to parse user detials and store in DB and create profile outof it.
+3) Student should able to take the quize and coding test.
 
 ##### Phase 3
-1) User should able to chat with dev export to get clarifications.
-2) User should able to wirte the coding competations to improve the coding skills.
+1) Student should able to chat with dev export to get clarifications.
+2) Student should able to wirte the coding competations to improve the coding skills.
+
 
 
 
