@@ -1,25 +1,23 @@
 # Pioneer Coders App
 
-## List of funcanalities
+## List of functionalities
 ##### Sprint 1
-1) Student should able to select the course and topic to view the learning videos.
-2) Student should able to download the sample codes for that topic.
-3) Student should able to write the code in code editor to compile and run the code.
+1) Student should able to select the course and topic to view the learning videos. (ngx-embed-video)
+2) Student should able to download the sample codes for that topic. 
+3) Student should able to write the code in code editor to compile and run the code. (ng2-ace-editor + https://api.judge0.com/)
 
 ##### Sprint 2
-1) Student should able to login and registor 
-2) Student should able to upload resume, based on resume we hv to parse user detials and store in DB and create profile outof it.
-3) Student should able to take the quize and coding test.
+1) Student should able to login or registor using github/gmail/fb or by registration popup.(https://auth0.com/docs/quickstart/spa/angular2/01-login)
+2) Student should able to upload resume, based on resume we have to parse user detials and store in DB and create profile out of it.(resume-parser)
 
 ##### Sprint 3
-1) Student should able to chat with dev export to get clarifications.
-2) Student should able to wirte the coding competations to improve the coding skills.
+1) Teacher should able to register and manage this profile
+2) Teacher should able to manage his students and also able to create quize and coding test.
+3) Student should able to take the quize and coding test.
 
 ##### Sprint 4
-1) Teacher should able to register and manage this profile
-2) Teacher should able to manage his students.
-
-
+1) Student should able to chat with dev export to get clarifications.
+2) Student should able to wirte the coding competations to improve the coding skills.
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
