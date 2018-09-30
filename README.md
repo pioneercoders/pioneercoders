@@ -1,21 +1,21 @@
 # Pioneer Coders App
 
 ## List of funcanalities
-##### Phase 1
+##### Sprint 1
 1) Student should able to select the course and topic to view the learning videos.
 2) Student should able to download the sample codes for that topic.
 3) Student should able to write the code in code editor to compile and run the code.
 
-##### Phase 2
+##### Sprint 2
 1) Student should able to login and registor 
 2) Student should able to upload resume, based on resume we hv to parse user detials and store in DB and create profile outof it.
 3) Student should able to take the quize and coding test.
 
-##### Phase 3
+##### Sprint 3
 1) Student should able to chat with dev export to get clarifications.
 2) Student should able to wirte the coding competations to improve the coding skills.
 
-##### Phase 4
+##### Sprint 4
 1) Teacher should able to register and manage this profile
 2) Teacher should able to manage his students.
 
