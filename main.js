@@ -351,9 +351,9 @@ var QuizService = /** @class */ (function () {
     function QuizService(http) {
         this.http = http;
     }
-    QuizService.prototype.getQuizData = function (courseName, topicName) {
+    QuizService.prototype.getQuizData = function (courseId, topicId) {
         return this.http.get('https://codingkrishna.github.io/api/questions.json').pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["tap"])(function (data) {
-            data.questions.filter(function (quesesion) { return quesesion.catagory.type == courseName && quesesion.catagory.topic == topicName; });
+            console.log(data);
         }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["catchError"])(function (err) { return rxjs__WEBPACK_IMPORTED_MODULE_2__["Observable"].throw(err.json().error); }));
     };
     QuizService = __decorate([
@@ -772,6 +772,28 @@ var LayoutComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/ui/quiz/answerkey.ts":
+/*!**************************************!*\
+  !*** ./src/app/ui/quiz/answerkey.ts ***!
+  \**************************************/
+/*! exports provided: AnswerKey */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AnswerKey", function() { return AnswerKey; });
+var AnswerKey = /** @class */ (function () {
+    function AnswerKey(choosen, answer) {
+        this.choosen = choosen;
+        this.answer = answer;
+    }
+    return AnswerKey;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/ui/quiz/quiz.component.css":
 /*!********************************************!*\
   !*** ./src/app/ui/quiz/quiz.component.css ***!
@@ -790,7 +812,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"modal fade\" id=\"modalLoginForm\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"myModalLabel\"\n  aria-hidden=\"true\">\n  <div class=\"modal-dialog\" role=\"document\">\n    <div class=\"modal-content\" style=\"padding:10%\">\n\n\n            <ol>\n                <li *ngFor=\"let question of quizQuestions\">{{question.question}}</li>\n            </ol>\n\n<br>\n      <div class=\"modal-footer d-flex justify-content-center\">\n          <br><br>\n        <button type=\"button\" class=\"btn btn-primary btn-rounded mb-4\" data-dismiss=\"modal\">Submit</button>\n      </div>\n    </div>\n  </div>\n</div>\n<div class=\"text-right\" style=\"margin-top: -9%\">\n  <button type=\"button\" class=\"btn btn-info btn-rounded mb-4\" data-toggle=\"modal\" data-target=\"#modalLoginForm\" style=\"font-weight: bold; width: 21%\">Quiz</button>\n</div>"
+module.exports = "<div class=\"modal fade\" id=\"modalLoginForm\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"myModalLabel\"\n  aria-hidden=\"true\">\n  <div class=\"modal-dialog\" role=\"document\">\n    <div class=\"modal-content\" style=\"padding:10%\">\n            <!-- Quiz content -->\n            <div>\n                <h4> QUIZ</h4>\n            \n            <div class=\"jumbotron\">\n              <ul>{{question}}</ul>\n                <ul *ngFor=\"let opt of option\">\n                    <div class=\"checkbox\">\n                        <label><input type=\"checkbox\" (click)=\"check($event,opt)\">\n                       {{opt}}\n                        <span class=\"cr\"><i class=\"cr-icon glyphicon glyphicon-ok\"></i></span>\n                        </label>\n                    </div>\n                </ul>\n               <button (click)=\"previous()\"*ngIf=\"i>0\" >previous</button>\n                <button  (click)=\"next()\" *ngIf=\"i<quizlength\">next</button>\n            </div>\n                <button class=\"btn btn-info\" (click)=\"generatemark()\">Submit</button>\n            </div>\n            <!-- Quiz content -->\n    </div>\n  </div>\n</div>\n\n<div class=\"text-right\" style=\"margin-top: -9%\">\n  <button type=\"button\" class=\"btn btn-info btn-rounded mb-4\" data-toggle=\"modal\" data-target=\"#modalLoginForm\" style=\"font-weight: bold; width: 21%\">Quiz</button>\n</div>"
 
 /***/ }),
 
@@ -807,6 +829,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 /* harmony import */ var _services_quiz_quiz_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../services/quiz/quiz.service */ "./src/app/services/quiz/quiz.service.ts");
+/* harmony import */ var _answerkey__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./answerkey */ "./src/app/ui/quiz/answerkey.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -819,26 +842,94 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 
+
 var QuizComponent = /** @class */ (function () {
     function QuizComponent(route, router, quizServ) {
         this.route = route;
         this.router = router;
         this.quizServ = quizServ;
-        this.topicId = "1";
+        this.topicId = 1;
+        this.i = 0;
+        /********************************************************* */
+        this.answerkey = [];
+        ///////////////////////////////////
+        this.marks = 0;
     }
     QuizComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.route.parent.params.subscribe(function (params) {
             _this.courseId = +params["courseId"];
-            console.log('QuizComponent->ngOnInit courseId', _this.courseId, ' topicId-->', _this.topicId);
+            console.log('QuizComponent->ngOnInit parent courseId', _this.courseId, ' topicId-->', _this.topicId);
+            _this.getQuestions();
         });
         this.route.params.subscribe(function (params) {
-            console.log('QuizComponent-> ngOnInit courseId-->', _this.courseId, 'topic id-->', params.topicId, 'topicId->', params.topicId);
-            _this.quizServ.getQuizData(_this.courseId, params.topicId).subscribe(function (data) {
-                _this.quizQuestions = data.questions;
-                console.log('QuizComponent-> quizQuestions', _this.quizQuestions);
-            });
+            console.log('QuizComponent->ngOnInit child params', params);
+            console.log('QuizComponent->ngOnInit courseId-->', _this.courseId, 'topic id-->', params.topicId, 'topicId->', params.topicId);
+            _this.topicId = params.topicId;
+            _this.getQuestions();
         });
+    };
+    QuizComponent.prototype.getQuestions = function () {
+        var _this = this;
+        this.quizServ.getQuizData(this.courseId, this.topicId).subscribe(function (data) {
+            _this.quizQuestions = data.questions.filter(function (quesesion) { return quesesion.languageId == _this.courseId && quesesion.topicId == _this.topicId; });
+            console.log('QuizComponent->ngOnInit quizQuestions', _this.quizQuestions);
+            _this.question = _this.quizQuestions[0].question;
+            _this.option = _this.quizQuestions[0].anslist;
+            _this.i = 0;
+            _this.quizlength = _this.quizQuestions.length;
+        });
+    };
+    /******************************************************** */
+    QuizComponent.prototype.next = function () {
+        ++this.i;
+        this.question = this.quizQuestions[this.i].question;
+        this.option = this.quizQuestions[this.i].anslist;
+    };
+    QuizComponent.prototype.previous = function () {
+        --this.i;
+        this.question = this.quizQuestions[this.i].question;
+        this.option = this.quizQuestions[this.i].anslist;
+    };
+    QuizComponent.prototype.check = function (e, str, answer) {
+        if (e.target.checked) {
+            console.log("..................." + str + " " + answer);
+            this.answerkey.push(new _answerkey__WEBPACK_IMPORTED_MODULE_3__["AnswerKey"](str, answer));
+        }
+        else {
+            this.answerkey.splice(0, 1);
+        }
+        console.log(this.answerkey);
+        this.recursivecheck();
+    };
+    QuizComponent.prototype.generatemark = function () {
+        for (var i = 0; i < this.answerkey.length; i++) {
+            if (this.answerkey[i].choosen == this.quizQuestions[i].answer)
+                this.marks++;
+        }
+        alert("your score is " + JSON.stringify(this.marks));
+        // document.writeln("your score is " + this.marks);
+    };
+    ///////////////////////////////////
+    QuizComponent.prototype.recursivecheck = function () {
+        var result1 = this.quizQuestions;
+        var result2 = this.answerkey;
+        var props = ['id', 'answer'];
+        var result = result1.filter(function (o1) {
+            // filter out (!) items in result2
+            return result2.some(function (o2) {
+                return o1.answer === o2.answer;
+                // assumes unique id
+            });
+        }).map(function (o) {
+            // use reduce to make objects with only the required properties
+            // and map to apply this to the filtered array as a whole
+            return props.reduce(function (newo, ans) {
+                newo[ans] = o[ans];
+                return newo;
+            }, {});
+        });
+        console.log("result:" + JSON.stringify(result));
     };
     QuizComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
