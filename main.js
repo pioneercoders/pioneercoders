@@ -498,6 +498,8 @@ var EditorComponent = /** @class */ (function () {
             console.log("EditorComponent on init>>", result);
             _this.languageList = result;
         });
+        this.text = this.sampleCode;
+        console.log('smapleCode -->', this.sampleCode, this.courseId);
     };
     EditorComponent.prototype.ngAfterViewInit = function () {
         this.editor.setTheme("ace/theme/monokai");
@@ -538,6 +540,14 @@ var EditorComponent = /** @class */ (function () {
             }, 5000);
         });
     };
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])(),
+        __metadata("design:type", String)
+    ], EditorComponent.prototype, "sampleCode", void 0);
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])(),
+        __metadata("design:type", Number)
+    ], EditorComponent.prototype, "courseId", void 0);
     __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"])('editor'),
         __metadata("design:type", Object)
@@ -1042,7 +1052,7 @@ module.exports = "a{\n    text-decoration: none;\n    color:white;\n    font-wei
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<iframe\n            width=\"680\"\n            height=\"450\"\n            [src]=\"videoId | safe\"\n            frameborder=\"0\"\n            allowfullscreen\n          ></iframe>\n          <hr>\n          <div class=\"design-main\">\n              <div class=\"bg-danger design-main-inside\"></div>\n              <div class=\"bg-warning design-main-inside\"></div>\n              <div class=\"bg-success design-main-inside\"></div>\n            </div>\n          <br>\n          <button class=\"btn btn-info\">\n            <a href=\"{{projectURL}}\" target=\"_blank\"><i class=\"fas fa-angle-left\"></i><i class=\"fas fa-angle-right\"></i>  Download Sample Code</a>\n           </button>\n  <div>\n    <br>\n    <quiz></quiz>\n  </div>\n  <div>\n    <online-editor></online-editor>\n  </div>"
+module.exports = "<iframe\n            width=\"680\"\n            height=\"450\"\n            [src]=\"videoId | safe\"\n            frameborder=\"0\"\n            allowfullscreen\n          ></iframe>\n          <hr>\n          <div class=\"design-main\">\n              <div class=\"bg-danger design-main-inside\"></div>\n              <div class=\"bg-warning design-main-inside\"></div>\n              <div class=\"bg-success design-main-inside\"></div>\n            </div>\n          <br>\n          <button class=\"btn btn-info\">\n            <a href=\"{{projectURL}}\" target=\"_blank\"><i class=\"fas fa-angle-left\"></i><i class=\"fas fa-angle-right\"></i>  Download Sample Code</a>\n           </button>\n  <div>\n    <br>\n    <quiz></quiz>\n  </div>\n  <div>\n    <online-editor [courseId]=\"courseId\" [sampleCode]=\"sampleCode\"></online-editor>\n  </div>"
 
 /***/ }),
 
@@ -1083,12 +1093,14 @@ var VideoComponent = /** @class */ (function () {
         this.route.parent.params.subscribe(function (params) {
             _this.courseId = +params["courseId"];
             var topic = _this.courseServ.getCourseDetails(_this.courseId).topics[0];
+            _this.sampleCode = topic.code;
             console.log('VideoComponent->ngOnInit courseId', _this.courseId, ' topic-->', topic);
             _this.projectURL = topic.projectUrl;
             _this.videoId = "https://www.youtube.com/embed/" + topic.videoId;
         });
         this.route.params.subscribe(function (params) {
             var topic = _this.courseServ.getTopicDetails(_this.courseId, params.topicId);
+            _this.sampleCode = topic.code;
             console.log('courseId-->', _this.courseId, 'topic id-->', params.topicId, 'topic->', topic);
             _this.projectURL = topic.projectUrl;
             _this.videoId = "https://www.youtube.com/embed/" + topic.videoId;
