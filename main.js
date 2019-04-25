@@ -113,12 +113,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ui_quiz_quiz_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./ui/quiz/quiz.component */ "./src/app/ui/quiz/quiz.component.ts");
 /* harmony import */ var _services_course_course_service__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./services/course/course.service */ "./src/app/services/course/course.service.ts");
 /* harmony import */ var _ui_signin_signin_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./ui/signin/signin.component */ "./src/app/ui/signin/signin.component.ts");
-/* harmony import */ var _services_code_executor_code_executor_service__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./services/code-executor/code-executor.service */ "./src/app/services/code-executor/code-executor.service.ts");
-/* harmony import */ var _tutorial_resolve__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./tutorial.resolve */ "./src/app/tutorial.resolve.ts");
-/* harmony import */ var _services_quiz_quiz_service__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./services/quiz/quiz.service */ "./src/app/services/quiz/quiz.service.ts");
-/* harmony import */ var _pipes_safepipe__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./pipes/safepipe */ "./src/app/pipes/safepipe.ts");
-/* harmony import */ var angular_6_social_login_v2__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! angular-6-social-login-v2 */ "./node_modules/angular-6-social-login-v2/angular-6-social-login-v2.umd.js");
-/* harmony import */ var angular_6_social_login_v2__WEBPACK_IMPORTED_MODULE_21___default = /*#__PURE__*/__webpack_require__.n(angular_6_social_login_v2__WEBPACK_IMPORTED_MODULE_21__);
+/* harmony import */ var _ui_interview_questions_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./ui/interview/questions.component */ "./src/app/ui/interview/questions.component.ts");
+/* harmony import */ var _services_code_executor_code_executor_service__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./services/code-executor/code-executor.service */ "./src/app/services/code-executor/code-executor.service.ts");
+/* harmony import */ var _tutorial_resolve__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./tutorial.resolve */ "./src/app/tutorial.resolve.ts");
+/* harmony import */ var _services_quiz_quiz_service__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./services/quiz/quiz.service */ "./src/app/services/quiz/quiz.service.ts");
+/* harmony import */ var _pipes_safepipe__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./pipes/safepipe */ "./src/app/pipes/safepipe.ts");
+/* harmony import */ var angular_6_social_login_v2__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! angular-6-social-login-v2 */ "./node_modules/angular-6-social-login-v2/angular-6-social-login-v2.umd.js");
+/* harmony import */ var angular_6_social_login_v2__WEBPACK_IMPORTED_MODULE_22___default = /*#__PURE__*/__webpack_require__.n(angular_6_social_login_v2__WEBPACK_IMPORTED_MODULE_22__);
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -147,25 +148,24 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+
 var routes = [
     { path: '', redirectTo: '/course/1/topic/1', pathMatch: 'full' },
     { path: 'course/:courseId', component: _ui_tutorial_tutorial_component__WEBPACK_IMPORTED_MODULE_11__["TutorialComponent"],
         children: [
             { path: '', redirectTo: './topic/1', pathMatch: 'full' },
-            {
-                path: 'topic/:topicId',
-                component: _ui_video_video_component__WEBPACK_IMPORTED_MODULE_12__["VideoComponent"]
-            }
+            { path: 'topic/:topicId', component: _ui_video_video_component__WEBPACK_IMPORTED_MODULE_12__["VideoComponent"] },
+            { path: 'interview/:courseName', component: _ui_interview_questions_component__WEBPACK_IMPORTED_MODULE_17__["QuestionsComponent"] }
         ],
-        resolve: { courses: _tutorial_resolve__WEBPACK_IMPORTED_MODULE_18__["TutorialResolve"] }
-    }
+        resolve: { courses: _tutorial_resolve__WEBPACK_IMPORTED_MODULE_19__["TutorialResolve"] }
+    },
 ];
 // Configs 
 function getAuthServiceConfigs() {
-    var config = new angular_6_social_login_v2__WEBPACK_IMPORTED_MODULE_21__["AuthServiceConfig"]([
+    var config = new angular_6_social_login_v2__WEBPACK_IMPORTED_MODULE_22__["AuthServiceConfig"]([
         {
-            id: angular_6_social_login_v2__WEBPACK_IMPORTED_MODULE_21__["GoogleLoginProvider"].PROVIDER_ID,
-            provider: new angular_6_social_login_v2__WEBPACK_IMPORTED_MODULE_21__["GoogleLoginProvider"]("26197787311-0pmktkpj9m5bts42j5g9u5f5gem4sfrd.apps.googleusercontent.com")
+            id: angular_6_social_login_v2__WEBPACK_IMPORTED_MODULE_22__["GoogleLoginProvider"].PROVIDER_ID,
+            provider: new angular_6_social_login_v2__WEBPACK_IMPORTED_MODULE_22__["GoogleLoginProvider"]("26197787311-0pmktkpj9m5bts42j5g9u5f5gem4sfrd.apps.googleusercontent.com")
         }
     ]);
     return config;
@@ -177,14 +177,14 @@ var AppModule = /** @class */ (function () {
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
             declarations: [
                 _app_component__WEBPACK_IMPORTED_MODULE_7__["AppComponent"], _ui_layout_layout_component__WEBPACK_IMPORTED_MODULE_8__["LayoutComponent"], _ui_header_header_component__WEBPACK_IMPORTED_MODULE_9__["HeaderComponent"], _ui_footer_footer_component__WEBPACK_IMPORTED_MODULE_10__["FooterComponent"], _ui_tutorial_tutorial_component__WEBPACK_IMPORTED_MODULE_11__["TutorialComponent"], _ui_video_video_component__WEBPACK_IMPORTED_MODULE_12__["VideoComponent"], _ui_editor_editor_component__WEBPACK_IMPORTED_MODULE_13__["EditorComponent"],
-                _pipes_safepipe__WEBPACK_IMPORTED_MODULE_20__["SafePipe"], _ui_quiz_quiz_component__WEBPACK_IMPORTED_MODULE_14__["QuizComponent"], _ui_signin_signin_component__WEBPACK_IMPORTED_MODULE_16__["SigninComponent"]
+                _pipes_safepipe__WEBPACK_IMPORTED_MODULE_21__["SafePipe"], _ui_quiz_quiz_component__WEBPACK_IMPORTED_MODULE_14__["QuizComponent"], _ui_signin_signin_component__WEBPACK_IMPORTED_MODULE_16__["SigninComponent"], _ui_interview_questions_component__WEBPACK_IMPORTED_MODULE_17__["QuestionsComponent"]
             ],
             imports: [
-                _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"], ng2_ace_editor__WEBPACK_IMPORTED_MODULE_5__["AceEditorModule"], angular_6_social_login_v2__WEBPACK_IMPORTED_MODULE_21__["SocialLoginModule"],
+                _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"], ng2_ace_editor__WEBPACK_IMPORTED_MODULE_5__["AceEditorModule"], angular_6_social_login_v2__WEBPACK_IMPORTED_MODULE_22__["SocialLoginModule"],
                 _angular_router__WEBPACK_IMPORTED_MODULE_4__["RouterModule"].forRoot(routes), ngx_md__WEBPACK_IMPORTED_MODULE_6__["NgxMdModule"].forRoot()
             ],
-            providers: [_tutorial_resolve__WEBPACK_IMPORTED_MODULE_18__["TutorialResolve"], _services_course_course_service__WEBPACK_IMPORTED_MODULE_15__["CourseService"], _services_code_executor_code_executor_service__WEBPACK_IMPORTED_MODULE_17__["CodeExecutorService"], _services_quiz_quiz_service__WEBPACK_IMPORTED_MODULE_19__["QuizService"], {
-                    provide: angular_6_social_login_v2__WEBPACK_IMPORTED_MODULE_21__["AuthServiceConfig"],
+            providers: [_tutorial_resolve__WEBPACK_IMPORTED_MODULE_19__["TutorialResolve"], _services_course_course_service__WEBPACK_IMPORTED_MODULE_15__["CourseService"], _services_code_executor_code_executor_service__WEBPACK_IMPORTED_MODULE_18__["CodeExecutorService"], _services_quiz_quiz_service__WEBPACK_IMPORTED_MODULE_20__["QuizService"], {
+                    provide: angular_6_social_login_v2__WEBPACK_IMPORTED_MODULE_22__["AuthServiceConfig"],
                     useFactory: getAuthServiceConfigs
                 }],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_7__["AppComponent"]]
@@ -740,6 +740,68 @@ var HeaderComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/ui/interview/questions.component.html":
+/*!*******************************************************!*\
+  !*** ./src/app/ui/interview/questions.component.html ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n<div NgxMd [path]=\"questionsFileName\" (error)=\"errorHandler($event)\" (loaded)=\"loadedHandler($event)\"></div>"
+
+/***/ }),
+
+/***/ "./src/app/ui/interview/questions.component.ts":
+/*!*****************************************************!*\
+  !*** ./src/app/ui/interview/questions.component.ts ***!
+  \*****************************************************/
+/*! exports provided: QuestionsComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "QuestionsComponent", function() { return QuestionsComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var QuestionsComponent = /** @class */ (function () {
+    function QuestionsComponent(route, router) {
+        this.route = route;
+        this.router = router;
+        this.questionsFileName = "README.md";
+    }
+    QuestionsComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.route.params.subscribe(function (params) {
+            _this.questionsFileName = './assets/' + params.courseName + '-interview-questions.md';
+            console.log('questionsFileName-->', _this.questionsFileName);
+        });
+    };
+    QuestionsComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'interview-questions',
+            template: __webpack_require__(/*! ./questions.component.html */ "./src/app/ui/interview/questions.component.html")
+        }),
+        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["ActivatedRoute"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"]])
+    ], QuestionsComponent);
+    return QuestionsComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/ui/layout/layout.component.css":
 /*!************************************************!*\
   !*** ./src/app/ui/layout/layout.component.css ***!
@@ -1081,7 +1143,7 @@ module.exports = "li.active a{\n    background-color: lightsalmon;\n}\n"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!-- <div>{{courseDetails.courseId}} </div>\n<div>{{courseDetails.name}} </div>\n<div>{{courseDetails.description}} </div>\n<div *ngFor=\"let topic of courseDetails.topics\">\n    <div ><a routerLink=\"video/{{topic.videoId}}\">{{topic.name}}</a> </div>\n</div>\n<div>\n        <router-outlet></router-outlet>\n</div>\n-->\n\n<div class=\"container row\">\n    <div class=\"menu\">\n        <ul>\n            <li routerLink=\"topic/{{topic.topicId}}\" *ngFor=\"let topic of courseDetails.topics\" style=\"cursor: pointer;\">\n                {{topic.name}}\n            </li>\n        </ul>\n    </div>\n    <div style=\"position: relative; left:5%;margin-top: 5%\">\n            <router-outlet></router-outlet>\n    </div>\n</div>\n"
+module.exports = "<!-- <div>{{courseDetails.courseId}} </div>\n<div>{{courseDetails.name}} </div>\n<div>{{courseDetails.description}} </div>\n<div *ngFor=\"let topic of courseDetails.topics\">\n    <div ><a routerLink=\"video/{{topic.videoId}}\">{{topic.name}}</a> </div>\n</div>\n<div>\n        <router-outlet></router-outlet>\n</div>\n-->\n\n<div class=\"container row\">\n    <div class=\"menu\">\n        <ul>\n            <li routerLink=\"topic/{{topic.topicId}}\" *ngFor=\"let topic of courseDetails.topics\" style=\"cursor: pointer;\">\n                {{topic.name}}\n            </li>\n            <li routerLink=\"interview/{{courseDetails.name}}\">Interview Questions</li>\n        </ul>\n    </div>\n    <div style=\"position: relative; left:5%;margin-top: 5%\">\n            <router-outlet></router-outlet>\n    </div>\n</div>\n"
 
 /***/ }),
 
@@ -1158,7 +1220,7 @@ module.exports = "a{\n    text-decoration: none;\n    color:white;\n    font-wei
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<iframe\n            width=\"680\"\n            height=\"450\"\n            [src]=\"videoId | safe\"\n            frameborder=\"0\"\n            allowfullscreen\n          ></iframe>\n          <hr>\n          <div class=\"design-main\">\n              <div class=\"bg-danger design-main-inside\"></div>\n              <div class=\"bg-warning design-main-inside\"></div>\n              <div class=\"bg-success design-main-inside\"></div>\n            </div>\n          <br>\n          <button class=\"btn btn-info\">\n            <a href=\"{{projectURL}}\" target=\"_blank\"><i class=\"fas fa-angle-left\"></i><i class=\"fas fa-angle-right\"></i>  Download Sample Code</a>\n           </button>\n  <div>\n    <br>\n    <quiz></quiz>\n  </div>\n  <div>\n    <online-editor [courseId]=\"courseId\" [sampleCode]=\"sampleCode\"></online-editor>\n  </div>\n <!-- \n<div NgxMd [path]=\"'README.md'\" (error)=\"errorHandler($event)\" (loaded)=\"loadedHandler($event)\"></div>\n-->\n"
+module.exports = "<iframe\n            width=\"680\"\n            height=\"450\"\n            [src]=\"videoId | safe\"\n            frameborder=\"0\"\n            allowfullscreen\n          ></iframe>\n          <hr>\n          <div class=\"design-main\">\n              <div class=\"bg-danger design-main-inside\"></div>\n              <div class=\"bg-warning design-main-inside\"></div>\n              <div class=\"bg-success design-main-inside\"></div>\n            </div>\n          <br>\n          <button class=\"btn btn-info\">\n            <a href=\"{{projectURL}}\" target=\"_blank\"><i class=\"fas fa-angle-left\"></i><i class=\"fas fa-angle-right\"></i>  Download Sample Code</a>\n           </button>\n  <div>\n    <br>\n    <quiz></quiz>\n  </div>\n  <div>\n    <online-editor [courseId]=\"courseId\" [sampleCode]=\"sampleCode\"></online-editor>\n  </div>\n"
 
 /***/ }),
 
