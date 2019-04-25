@@ -783,7 +783,7 @@ var QuestionsComponent = /** @class */ (function () {
     QuestionsComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.route.params.subscribe(function (params) {
-            _this.questionsFileName = './assets/' + params.courseName + '-interview-questions.md';
+            _this.questionsFileName = 'https://github.com/CodingKrishna/programming-beginners-guide/blob/master/class.md';
             console.log('questionsFileName-->', _this.questionsFileName);
         });
     };
