@@ -1,4 +1,5 @@
 # Java Interview Questions
-What is java?  
+What is java?    
+
 Java is a Programing language.
 
