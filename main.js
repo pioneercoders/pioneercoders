@@ -747,7 +747,7 @@ var HeaderComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n<div NgxMd [path]=\"questionsFileName\" (error)=\"errorHandler($event)\" (loaded)=\"loadedHandler($event)\"></div>"
+module.exports = "\n<div NgxMd [path]=\"questionsFileName\" (error)=\"errorHandler($event)\"></div>"
 
 /***/ }),
 
@@ -786,6 +786,9 @@ var QuestionsComponent = /** @class */ (function () {
             _this.questionsFileName = 'assets/' + params.courseName + '-interview-questions.md';
             console.log('questionsFileName-->', _this.questionsFileName);
         });
+    };
+    QuestionsComponent.prototype.errorHandler = function (error) {
+        console.log('error while loading readme file', error);
     };
     QuestionsComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
