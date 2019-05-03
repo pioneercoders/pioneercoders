@@ -1,4 +1,4 @@
-#Servlets
+# Servlets
 
 #### 1. What is a Servlet ? 
 The servlet is a Java programming language class used to process client requests and generate dynamic web content. Servlets are mostly used to process or store data submitted by an HTML form, provide dynamic content and manage state information that does not exist in the stateless HTTP protocol.
