@@ -41,7 +41,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<app-layout>\n</app-layout>\n"
+module.exports = "<app-header></app-header>\n\n<router-outlet></router-outlet>\n\n<app-footer></app-footer>"
 
 /***/ }),
 
@@ -103,25 +103,26 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 /* harmony import */ var ng2_ace_editor__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng2-ace-editor */ "./node_modules/ng2-ace-editor/index.js");
 /* harmony import */ var ngx_md__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ngx-md */ "./node_modules/ngx-md/fesm5/ngx-md.js");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _ui_layout_layout_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./ui/layout/layout.component */ "./src/app/ui/layout/layout.component.ts");
-/* harmony import */ var _ui_header_header_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./ui/header/header.component */ "./src/app/ui/header/header.component.ts");
-/* harmony import */ var _ui_footer_footer_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./ui/footer/footer.component */ "./src/app/ui/footer/footer.component.ts");
-/* harmony import */ var _ui_tutorial_tutorial_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./ui/tutorial/tutorial.component */ "./src/app/ui/tutorial/tutorial.component.ts");
-/* harmony import */ var _ui_video_video_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./ui/video/video.component */ "./src/app/ui/video/video.component.ts");
-/* harmony import */ var _ui_editor_editor_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./ui/editor/editor.component */ "./src/app/ui/editor/editor.component.ts");
-/* harmony import */ var _ui_quiz_quiz_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./ui/quiz/quiz.component */ "./src/app/ui/quiz/quiz.component.ts");
-/* harmony import */ var _services_course_course_service__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./services/course/course.service */ "./src/app/services/course/course.service.ts");
-/* harmony import */ var _ui_signin_signin_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./ui/signin/signin.component */ "./src/app/ui/signin/signin.component.ts");
-/* harmony import */ var _ui_interview_questions_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./ui/interview/questions.component */ "./src/app/ui/interview/questions.component.ts");
-/* harmony import */ var _ui_user_desktop_userdesktop_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./ui/user/desktop/userdesktop.component */ "./src/app/ui/user/desktop/userdesktop.component.ts");
-/* harmony import */ var _services_code_executor_code_executor_service__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./services/code-executor/code-executor.service */ "./src/app/services/code-executor/code-executor.service.ts");
-/* harmony import */ var _tutorial_resolve__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./tutorial.resolve */ "./src/app/tutorial.resolve.ts");
-/* harmony import */ var _services_quiz_quiz_service__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./services/quiz/quiz.service */ "./src/app/services/quiz/quiz.service.ts");
-/* harmony import */ var _services_user_user_service__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./services/user/user.service */ "./src/app/services/user/user.service.ts");
-/* harmony import */ var _pipes_safepipe__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./pipes/safepipe */ "./src/app/pipes/safepipe.ts");
-/* harmony import */ var angular_6_social_login_v2__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! angular-6-social-login-v2 */ "./node_modules/angular-6-social-login-v2/angular-6-social-login-v2.umd.js");
-/* harmony import */ var angular_6_social_login_v2__WEBPACK_IMPORTED_MODULE_24___default = /*#__PURE__*/__webpack_require__.n(angular_6_social_login_v2__WEBPACK_IMPORTED_MODULE_24__);
+/* harmony import */ var angular_webstorage_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! angular-webstorage-service */ "./node_modules/angular-webstorage-service/bundles/angular-webstorage-service.es5.js");
+/* harmony import */ var ngx_countdown__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ngx-countdown */ "./node_modules/ngx-countdown/fesm5/ngx-countdown.js");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _ui_header_header_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./ui/header/header.component */ "./src/app/ui/header/header.component.ts");
+/* harmony import */ var _ui_footer_footer_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./ui/footer/footer.component */ "./src/app/ui/footer/footer.component.ts");
+/* harmony import */ var _ui_tutorial_tutorial_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./ui/tutorial/tutorial.component */ "./src/app/ui/tutorial/tutorial.component.ts");
+/* harmony import */ var _ui_video_video_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./ui/video/video.component */ "./src/app/ui/video/video.component.ts");
+/* harmony import */ var _ui_editor_editor_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./ui/editor/editor.component */ "./src/app/ui/editor/editor.component.ts");
+/* harmony import */ var _ui_quiz_quiz_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./ui/quiz/quiz.component */ "./src/app/ui/quiz/quiz.component.ts");
+/* harmony import */ var _services_course_course_service__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./services/course/course.service */ "./src/app/services/course/course.service.ts");
+/* harmony import */ var _ui_signin_signin_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./ui/signin/signin.component */ "./src/app/ui/signin/signin.component.ts");
+/* harmony import */ var _ui_interview_questions_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./ui/interview/questions.component */ "./src/app/ui/interview/questions.component.ts");
+/* harmony import */ var _ui_user_desktop_userdesktop_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./ui/user/desktop/userdesktop.component */ "./src/app/ui/user/desktop/userdesktop.component.ts");
+/* harmony import */ var _services_code_executor_code_executor_service__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./services/code-executor/code-executor.service */ "./src/app/services/code-executor/code-executor.service.ts");
+/* harmony import */ var _tutorial_resolve__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./tutorial.resolve */ "./src/app/tutorial.resolve.ts");
+/* harmony import */ var _services_quiz_quiz_service__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./services/quiz/quiz.service */ "./src/app/services/quiz/quiz.service.ts");
+/* harmony import */ var _services_user_user_service__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./services/user/user.service */ "./src/app/services/user/user.service.ts");
+/* harmony import */ var _pipes_safepipe__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./pipes/safepipe */ "./src/app/pipes/safepipe.ts");
+/* harmony import */ var angular_6_social_login_v2__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! angular-6-social-login-v2 */ "./node_modules/angular-6-social-login-v2/angular-6-social-login-v2.umd.js");
+/* harmony import */ var angular_6_social_login_v2__WEBPACK_IMPORTED_MODULE_25___default = /*#__PURE__*/__webpack_require__.n(angular_6_social_login_v2__WEBPACK_IMPORTED_MODULE_25__);
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -153,24 +154,32 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+
 var routes = [
-    { path: '', redirectTo: '/course/1/topic/1', pathMatch: 'full' },
-    { path: 'course/:courseId', component: _ui_tutorial_tutorial_component__WEBPACK_IMPORTED_MODULE_11__["TutorialComponent"],
+    {
+        path: '', redirectTo: '/course/1/topic/1', pathMatch: 'full'
+    },
+    { path: 'course/:courseId', component: _ui_tutorial_tutorial_component__WEBPACK_IMPORTED_MODULE_12__["TutorialComponent"],
         children: [
             { path: '', redirectTo: './topic/1', pathMatch: 'full' },
-            { path: 'topic/:topicId', component: _ui_video_video_component__WEBPACK_IMPORTED_MODULE_12__["VideoComponent"] },
-            { path: 'interview/:courseName', component: _ui_interview_questions_component__WEBPACK_IMPORTED_MODULE_17__["QuestionsComponent"] }
+            { path: 'topic/:topicId', component: _ui_video_video_component__WEBPACK_IMPORTED_MODULE_13__["VideoComponent"] },
+            { path: 'interview/:courseName', component: _ui_interview_questions_component__WEBPACK_IMPORTED_MODULE_18__["QuestionsComponent"] }
         ],
-        resolve: { courses: _tutorial_resolve__WEBPACK_IMPORTED_MODULE_20__["TutorialResolve"] }
+        resolve: { courses: _tutorial_resolve__WEBPACK_IMPORTED_MODULE_21__["TutorialResolve"] }
     },
-    { path: 'userdesktop', component: _ui_user_desktop_userdesktop_component__WEBPACK_IMPORTED_MODULE_18__["UserDesktopComponent"] }
+    {
+        path: 'userdesktop', component: _ui_user_desktop_userdesktop_component__WEBPACK_IMPORTED_MODULE_19__["UserDesktopComponent"]
+    },
+    {
+        path: '**', redirectTo: '/course/1/topic/1', pathMatch: 'full'
+    }
 ];
 // Configs 
 function getAuthServiceConfigs() {
-    var config = new angular_6_social_login_v2__WEBPACK_IMPORTED_MODULE_24__["AuthServiceConfig"]([
+    var config = new angular_6_social_login_v2__WEBPACK_IMPORTED_MODULE_25__["AuthServiceConfig"]([
         {
-            id: angular_6_social_login_v2__WEBPACK_IMPORTED_MODULE_24__["GoogleLoginProvider"].PROVIDER_ID,
-            provider: new angular_6_social_login_v2__WEBPACK_IMPORTED_MODULE_24__["GoogleLoginProvider"]("26197787311-0pmktkpj9m5bts42j5g9u5f5gem4sfrd.apps.googleusercontent.com")
+            id: angular_6_social_login_v2__WEBPACK_IMPORTED_MODULE_25__["GoogleLoginProvider"].PROVIDER_ID,
+            provider: new angular_6_social_login_v2__WEBPACK_IMPORTED_MODULE_25__["GoogleLoginProvider"]("26197787311-0pmktkpj9m5bts42j5g9u5f5gem4sfrd.apps.googleusercontent.com")
         }
     ]);
     return config;
@@ -181,18 +190,18 @@ var AppModule = /** @class */ (function () {
     AppModule = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
             declarations: [
-                _app_component__WEBPACK_IMPORTED_MODULE_7__["AppComponent"], _ui_layout_layout_component__WEBPACK_IMPORTED_MODULE_8__["LayoutComponent"], _ui_header_header_component__WEBPACK_IMPORTED_MODULE_9__["HeaderComponent"], _ui_footer_footer_component__WEBPACK_IMPORTED_MODULE_10__["FooterComponent"], _ui_tutorial_tutorial_component__WEBPACK_IMPORTED_MODULE_11__["TutorialComponent"], _ui_video_video_component__WEBPACK_IMPORTED_MODULE_12__["VideoComponent"], _ui_editor_editor_component__WEBPACK_IMPORTED_MODULE_13__["EditorComponent"],
-                _pipes_safepipe__WEBPACK_IMPORTED_MODULE_23__["SafePipe"], _ui_quiz_quiz_component__WEBPACK_IMPORTED_MODULE_14__["QuizComponent"], _ui_signin_signin_component__WEBPACK_IMPORTED_MODULE_16__["SigninComponent"], _ui_interview_questions_component__WEBPACK_IMPORTED_MODULE_17__["QuestionsComponent"], _ui_user_desktop_userdesktop_component__WEBPACK_IMPORTED_MODULE_18__["UserDesktopComponent"]
+                _app_component__WEBPACK_IMPORTED_MODULE_9__["AppComponent"], _ui_header_header_component__WEBPACK_IMPORTED_MODULE_10__["HeaderComponent"], _ui_footer_footer_component__WEBPACK_IMPORTED_MODULE_11__["FooterComponent"], _ui_tutorial_tutorial_component__WEBPACK_IMPORTED_MODULE_12__["TutorialComponent"], _ui_video_video_component__WEBPACK_IMPORTED_MODULE_13__["VideoComponent"], _ui_editor_editor_component__WEBPACK_IMPORTED_MODULE_14__["EditorComponent"],
+                _pipes_safepipe__WEBPACK_IMPORTED_MODULE_24__["SafePipe"], _ui_quiz_quiz_component__WEBPACK_IMPORTED_MODULE_15__["QuizComponent"], _ui_signin_signin_component__WEBPACK_IMPORTED_MODULE_17__["SigninComponent"], _ui_interview_questions_component__WEBPACK_IMPORTED_MODULE_18__["QuestionsComponent"], _ui_user_desktop_userdesktop_component__WEBPACK_IMPORTED_MODULE_19__["UserDesktopComponent"]
             ],
             imports: [
-                _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"], ng2_ace_editor__WEBPACK_IMPORTED_MODULE_5__["AceEditorModule"], angular_6_social_login_v2__WEBPACK_IMPORTED_MODULE_24__["SocialLoginModule"],
-                _angular_router__WEBPACK_IMPORTED_MODULE_4__["RouterModule"].forRoot(routes), ngx_md__WEBPACK_IMPORTED_MODULE_6__["NgxMdModule"].forRoot()
+                _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"], ng2_ace_editor__WEBPACK_IMPORTED_MODULE_5__["AceEditorModule"], angular_6_social_login_v2__WEBPACK_IMPORTED_MODULE_25__["SocialLoginModule"], ngx_countdown__WEBPACK_IMPORTED_MODULE_8__["CountdownModule"],
+                _angular_router__WEBPACK_IMPORTED_MODULE_4__["RouterModule"].forRoot(routes), ngx_md__WEBPACK_IMPORTED_MODULE_6__["NgxMdModule"].forRoot(), angular_webstorage_service__WEBPACK_IMPORTED_MODULE_7__["StorageServiceModule"],
             ],
-            providers: [_tutorial_resolve__WEBPACK_IMPORTED_MODULE_20__["TutorialResolve"], _services_course_course_service__WEBPACK_IMPORTED_MODULE_15__["CourseService"], _services_code_executor_code_executor_service__WEBPACK_IMPORTED_MODULE_19__["CodeExecutorService"], _services_quiz_quiz_service__WEBPACK_IMPORTED_MODULE_21__["QuizService"], _services_user_user_service__WEBPACK_IMPORTED_MODULE_22__["UserService"], {
-                    provide: angular_6_social_login_v2__WEBPACK_IMPORTED_MODULE_24__["AuthServiceConfig"],
+            providers: [_tutorial_resolve__WEBPACK_IMPORTED_MODULE_21__["TutorialResolve"], _services_course_course_service__WEBPACK_IMPORTED_MODULE_16__["CourseService"], _services_code_executor_code_executor_service__WEBPACK_IMPORTED_MODULE_20__["CodeExecutorService"], _services_quiz_quiz_service__WEBPACK_IMPORTED_MODULE_22__["QuizService"], _services_user_user_service__WEBPACK_IMPORTED_MODULE_23__["UserService"], {
+                    provide: angular_6_social_login_v2__WEBPACK_IMPORTED_MODULE_25__["AuthServiceConfig"],
                     useFactory: getAuthServiceConfigs
                 }],
-            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_7__["AppComponent"]]
+            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_9__["AppComponent"]]
         })
     ], AppModule);
     return AppModule;
@@ -406,6 +415,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
+/* harmony import */ var angular_webstorage_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! angular-webstorage-service */ "./node_modules/angular-webstorage-service/bundles/angular-webstorage-service.es5.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -415,20 +425,39 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+var __param = (undefined && undefined.__param) || function (paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+};
 
 
 
+
+
+var STORAGE_KEY = 'pure-awesomeness';
 var UserService = /** @class */ (function () {
-    function UserService(http) {
+    function UserService(http, storage) {
         this.http = http;
+        this.storage = storage;
         this.userDataSubject = new rxjs__WEBPACK_IMPORTED_MODULE_2__["Subject"]();
     }
+    UserService.prototype.set = function (value) {
+        console.log("in session set=-----------......>>>>>", value);
+        this.http.post("http://localhost:4300/api/users", JSON.parse(value)).subscribe(function (data) {
+            console.log("inserted succesfully", data);
+        });
+        this.storage.set(STORAGE_KEY, value);
+    };
+    UserService.prototype.get = function () {
+        return this.storage.get(STORAGE_KEY);
+    };
     UserService.prototype.getUserData = function () {
+        // console.log(this.UserData.id,"userAs");
         return this.userDataSubject.asObservable();
     };
     UserService = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])(),
-        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]])
+        __param(1, Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Inject"])(angular_webstorage_service__WEBPACK_IMPORTED_MODULE_3__["SESSION_STORAGE"])),
+        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"], Object])
     ], UserService);
     return UserService;
 }());
@@ -529,7 +558,7 @@ module.exports = ".onlineEditor-section{\n    padding: 0%;\n}\n.onlineEditor-pan
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.8.1/css/all.css\" integrity=\"sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf\" crossorigin=\"anonymous\">\n\n  \n      <div class=\"row header-navbar\">\n        <div class=\"col-md-3\">\n          <h2 class=\"nav-header\">CodeEditor</h2>\n        </div>\n        <div class=\"col-md-4 offset-md-3\" style=\"margin-left: 12%\"> \n          <select class=\"nav-lang-select\" name=\"language\" (change)=\"selectedLanguage($event.target.value)\">\n              <option *ngFor='let language of languageList' value={{language.id}}>{{language.name}}</option>\n          </select>\n        </div>  \n        <div class=\"col-md-2\" style=\"margin-left:10%\">\n          <button class=\"nav-submit\" (click)=\"executeCode(text)\"><i class=\"fas fa-play\"></i> Run</button>\n        </div>\n      </div>\n    \n\n\n  <section class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12 onlineEditor-section\">\n  <div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12 onlineEditor-panel\">\n      <ace-editor\n       [(text)]=\"text\"\n        #editor style=\"height:250px;\"></ace-editor>\n  </div>\n  <div class=\"row\">\n    <div class=\"col-lg-6 col-md-6 col-sm-12 col-xs-12\">\n      <span>Input:</span>\n      <ace-editor\n       [(text)]=\"input\"\n        #editor style=\"height:150px;\"></ace-editor>\n    </div>\n    <div class=\"col-lg-6 col-md-6 col-sm-12 col-xs-12\">\n        <span>Output: </span> \n        <div class=\"result-box\">\n            {{codeResult}}\n        </div>\n      </div>\n  </div>\n</section>\n\n\n"
+module.exports = "<link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.8.1/css/all.css\" integrity=\"sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf\" crossorigin=\"anonymous\">\n\n  \n      <div class=\"row header-navbar\">\n        <div class=\"col-md-3\">\n          <h2 class=\"nav-header\">CodeEditor</h2>\n        </div>\n        <div class=\"col-md-4 offset-md-3\" style=\"margin-left: 12%\"> \n          <select class=\"nav-lang-select\" name=\"language\" (change)=\"selectedLanguage($event.target.value)\">\n              <option *ngFor='let language of languageList' value={{language.id}}>{{language.name}}</option>\n          </select>\n        </div>  \n        <div class=\"col-md-2\" style=\"margin-left:10%\">\n          <button class=\"nav-submit\" (click)=\"executeCode(text)\"><i class=\"fas fa-play\"></i> Run</button>\n        </div>\n      </div>\n    \n\n\n  <section class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12 onlineEditor-section\">\n  <div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12 onlineEditor-panel\">\n      <ace-editor\n       [(text)]=\"text\"\n        #editor style=\"height:250px;\"></ace-editor>\n  </div>\n  <div class=\"row mb-5\">\n    <div class=\"col-lg-6 col-md-6 col-sm-12 col-xs-12\">\n      <span>Input:</span>\n      <ace-editor\n       [(text)]=\"input\"\n        #editor style=\"height:150px;\"></ace-editor>\n    </div>\n    <div class=\"col-lg-6 col-md-6 col-sm-12 col-xs-12\">\n        <span>Output: </span> \n        <div class=\"result-box\">\n            {{codeResult}}\n        </div>\n      </div>\n  </div>\n</section>\n\n\n"
 
 /***/ }),
 
@@ -675,7 +704,7 @@ module.exports = ".fa-heart {\n  color: hotpink;\n}\nnav{\n  z-index: 5;\n}"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!-- FOOTER -->\n<nav class=\"bg-dark navbar-dark footer-fixed-custom\">\n    <span class=\"navbar footer-text-custom\">\n      Pioneer Coders 2019 . All Rights Reserved\n    </span>\n  </nav>\n  <!-- FOOTER -->"
+module.exports = "<!-- FOOTER -->\n<nav class=\"bg-dark navbar-dark footer-fixed-custom\">\n  <div class=\"container\">\n    <div class=\"row \">\n      <div class=\"col justify-content-start align-content-center  \">\n        <p class=\"text-white mt-1 mb-1 ml-0 pl-0\"> Pioneer Coders 2019 . All Rights Reserved</p>\n      </div>\n    </div>\n  </div>\n</nav>\n<!-- FOOTER -->"
 
 /***/ }),
 
@@ -727,7 +756,7 @@ var FooterComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".tag-line{\n    font-size: 80%;\n    padding-left: 18%;\n}"
+module.exports = ".dropdown-menu{\n    left: 86px;\n    top: 70px;\n}\n.other > ul{\n    list-style-type: none;\n    display: contents;\n}"
 
 /***/ }),
 
@@ -738,7 +767,7 @@ module.exports = ".tag-line{\n    font-size: 80%;\n    padding-left: 18%;\n}"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!-- Top Banner -->\n<nav class=\"navbar navbar-expand-sm bg-dark navbar-dark\">\n  <div class=\"container\">\n    \n    <ul class=\"nav navbar-nav ml-auto\">\n      <li class=\"nav-item m-1\">\n        <a class=\"nav-link\" href=\"#\" style=\"color: white\">\n          <i class=\"fas fa-mobile-alt\"></i> +91-8123870076</a>\n      </li>\n      <li class=\"nav-item m-1\">\n        <a class=\"nav-link\" href=\"#\" style=\"color: white\"><i class=\"far fa-envelope\"></i>\n          contactus@pioneercoders.com</a>\n      </li>\n      <li class=\"nav-item m-1\">\n        <a class=\"nav-link\" href=\"#\" style=\"color: white;\"><i class=\"fas fa-map-marker-alt\"></i> BTM\n          layout 1stage, Near\n          Gangothri Circle</a>\n      </li>\n    </ul>\n  </div>\n\n</nav>\n<!-- Top Banner -->\n<!-- 2nd Navbar -->\n<!-- Header -->\n<nav class=\"navbar  navbar-expand-sm  sticky-top m-0 bg-white navbar-light shadow-sm\">\n  <div class=\"container\">\n    <!-- Brand/logo -->\n    <a class=\"navbar-brand \" href=\"#\">\n      <img src=\"../../../assets/pc-logo.png\" alt=\"logo\" class=\"img-box d-inline-flex mr-auto\" width=\"50px\" />\n      <h2 class=\"title text-secondary d-inline-flex\">PioneerCoders</h2>\n      <div class=\"tag-line\">Path to Code, Platform for coders.</div>\n    </a>\n    <!-- Hamburger Icon -->\n    <button class=\"navbar-toggler ml-auto\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\"\n      aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n      <span class=\"navbar-toggler-icon\"></span>\n    </button>\n\n    <!-- Collapsible Menu -->\n    <div class=\"collapse navbar-collapse\" id=\"navbarText\">\n      <ul class=\"nav navbar-nav ml-auto\">\n        <li class=\"nav-item dropdown position-static\">\n          <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\"\n            aria-haspopup=\"true\" aria-expanded=\"false\" style=\"color:#DC3545\">Video Tutorial</a>\n          \n          <!-- MENU DETAILS -->\n          <div class=\"dropdown-menu justify-content-center w-100 bg-light\" aria-labelledby=\"navbarDropdown\">\n            <div class=\"container\">\n              <div class=\"row justify-content-around\">\n                <div *ngFor=\"let courseGrop of courseGropList\">\n                  <div class=\"col\">\n                    <p><strong class=\"sub-menu-heading\">{{courseGrop.key}}</strong></p>\n                    <p>\n                      <a *ngFor=\"let course of courseGrop.value\" routerLink=\"/course/{{course.courseId}}/topic/1\">\n                        {{course.name}}<br>\n                      </a>\n                    </p>\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n\n        </li>\n        <li>\n          <app-signin></app-signin>\n        </li>\n      </ul>\n    </div>\n  </div>\n</nav>"
+module.exports = "<!-- Top Banner -->\n<nav class=\"navbar navbar-expand-sm bg-dark navbar-dark pt-0 pb-0\" >\n  <div class=\"container\">\n\n    <ul class=\"nav navbar-nav justify-content-start\">\n      <li class=\"nav-item m-1\">\n        <a class=\"nav-link pl-0 text-white\" href=\"#\" >\n          <i class=\"fas fa-mobile-alt\"></i> +91-8123870076</a>\n      </li>\n      <li class=\"nav-item m-1  \">\n        <a class=\"nav-link text-white\" href=\"#\" ><i class=\"far fa-envelope\"></i>\n          contactus@pioneercoders.com</a>\n      </li>\n    </ul>\n    <ul class=\"nav navbar-nav justify-content-end\">\n      <li class=\"nav-item m-1 \">\n        <a class=\"nav-link p-0 text-white\" href=\"#\" ><i class=\"fas fa-map-marker-alt\"></i> BTM\n          layout 1stage, Near\n          Gangothri Circle</a>\n      </li>\n    </ul>\n  </div>\n\n</nav>\n<!-- Top Banner -->\n<!-- 2nd Navbar -->\n<!-- Header -->\n<nav class=\"navbar  navbar-expand-sm  sticky-top m-0 bg-white navbar-light shadow-sm\">\n  <div class=\"container\">\n    <!-- Brand/logo -->\n    <a class=\"navbar-brand \" href=\"#\">\n      <img src=\"../../../assets/pc-logo.png\" alt=\"logo\" class=\"img-box d-inline-flex mr-auto\" width=\"50px\" />\n      <h2 class=\"title text-secondary d-inline-flex\">PioneerCoders</h2>\n      <div class=\"tag-line\">Path to Code, Platform for coders.</div>\n    </a>\n    <!-- Hamburger Icon -->\n    <button class=\"navbar-toggler ml-auto\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\"\n      aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n      <span class=\"navbar-toggler-icon\"></span>\n    </button>\n\n    <!-- Collapsible Menu -->\n    <div class=\"collapse navbar-collapse\" id=\"navbarText\">\n      <ul class=\"nav navbar-nav ml-auto\">\n        <li class=\"nav-item dropdown  position-static\">\n          <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\"\n            aria-haspopup=\"true\" aria-expanded=\"false\" style=\"color:#DC3545\">Video Tutorial\n          </a>\n\n          <!-- MENU DETAILS -->\n          <div class=\"row\">\n            <div class=\"dropdown-menu col-lg-11  col-lg-10 col-lg-offset-2 col-sm-10 col-sm-offset-2 bg-light shadow-lg p-3 mb-5 bg-white rounded \" aria-labelledby=\"navbarDropdown\">\n              <div class=\"container\">\n                <div class=\"row justify-content-around\">\n                  <div *ngFor=\"let courseGrop of courseGropList\">\n                    <div class=\"col\">\n                      <p><strong class=\"sub-menu-heading\">{{courseGrop.key}}</strong></p>\n                      <p>\n                        <a *ngFor=\"let course of courseGrop.value\" routerLink=\"/course/{{course.courseId}}/topic/1\">\n                          {{course.name}}<br>\n                        </a>\n                      </p>\n                    </div>\n                  </div>\n                           \n                  <div >\n                    <div class=\"col\">\n                      <p><strong class=\"sub-menu-heading\">Others</strong></p> \n                       <div class='other'>\n                         <ul>\n                           <li><a href=\"#\">Tersm</a></li>\n                           <li><a href=\"#\">Services</a></li>\n                           <li><a href=\"#\">Contact Us</a></li>\n                         </ul>\n                       </div>\n                    </div>\n                  </div>\n\n                  \n                </div>\n              </div>\n            </div>\n  \n          </div>\n        </li>\n        <li class=\"nav-item justify-content-end\">\n          <app-signin></app-signin>\n        </li>\n      </ul>\n    </div>\n  </div>\n</nav>"
 
 /***/ }),
 
@@ -804,7 +833,7 @@ var HeaderComponent = /** @class */ (function () {
             setTimeout(function () {
                 dropdown[dropdown.is(':hover') ? 'addClass' : 'removeClass']('show');
                 menu[dropdown.is(':hover') ? 'addClass' : 'removeClass']('show');
-            }, 1000);
+            }, 100);
         });
     };
     HeaderComponent = __decorate([
@@ -887,69 +916,6 @@ var QuestionsComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/ui/layout/layout.component.css":
-/*!************************************************!*\
-  !*** ./src/app/ui/layout/layout.component.css ***!
-  \************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = ""
-
-/***/ }),
-
-/***/ "./src/app/ui/layout/layout.component.html":
-/*!*************************************************!*\
-  !*** ./src/app/ui/layout/layout.component.html ***!
-  \*************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<app-header></app-header>\n<div class=\"container\">\n  <!--<div class=\"jumbotron\">\n    <h1>Angular CLI v6 + Bootstrap & FontAwesome</h1>\n    <p>\n      In this tutorial you learn how to use Angular CLI v6 with Bootstrap and FontAwesome!\n    </p>\n  </div>-->\n  \n    <router-outlet></router-outlet>\n  \n</div>\n<app-footer></app-footer>\n"
-
-/***/ }),
-
-/***/ "./src/app/ui/layout/layout.component.ts":
-/*!***********************************************!*\
-  !*** ./src/app/ui/layout/layout.component.ts ***!
-  \***********************************************/
-/*! exports provided: LayoutComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LayoutComponent", function() { return LayoutComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var LayoutComponent = /** @class */ (function () {
-    function LayoutComponent() {
-    }
-    LayoutComponent.prototype.ngOnInit = function () {
-    };
-    LayoutComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            selector: 'app-layout',
-            template: __webpack_require__(/*! ./layout.component.html */ "./src/app/ui/layout/layout.component.html"),
-            styles: [__webpack_require__(/*! ./layout.component.css */ "./src/app/ui/layout/layout.component.css")]
-        }),
-        __metadata("design:paramtypes", [])
-    ], LayoutComponent);
-    return LayoutComponent;
-}());
-
-
-
-/***/ }),
-
 /***/ "./src/app/ui/quiz/answerkey.ts":
 /*!**************************************!*\
   !*** ./src/app/ui/quiz/answerkey.ts ***!
@@ -979,7 +945,7 @@ var AnswerKey = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "\n\n  .btn-info-dif {\n    background-color: transparent;\n    border-radius: 0px;\n    border-top-right-radius: 10px;\n    border-bottom-left-radius: 10px;\n    border: 2px solid  #4bbcd7;\n    box-sizing: border-box;\n    transition: all 0.3s;\n  }\n  \n  .btn-info-dif:hover {\n    background-color: #4bbcd7;\n    color: #fff;\n    border-top-right-radius: 0px;\n    border-bottom-left-radius: 0px;\n    border-top-left-radius: 10px;\n    border-bottom-right-radius: 10px;\n    border: 2px solid  #4bbcd7;\n    box-sizing: border-box;\n  }\n  \n  .score-card{\n    color: green;\n\n  }\n  \n  .close-quiz{\n    cursor: pointer;\n    position: relative;\n    left: 20px;\n    top: -10px;\n    font-size: 28px\n  }\n "
 
 /***/ }),
 
@@ -990,7 +956,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"modal fade\" id=\"modalLoginForm\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"myModalLabel\"\n  aria-hidden=\"true\">\n  <div class=\"modal-dialog\" role=\"document\">\n    <div class=\"modal-content\" style=\"padding:10%\">\n            <!-- Quiz content -->\n            <div>\n                <h4> QUIZ</h4>\n            \n            <div class=\"jumbotron\">\n              <ul>{{question}}</ul>\n                <ul *ngFor=\"let opt of option\">\n                    <div class=\"checkbox\">\n                        <label><input type=\"checkbox\" (click)=\"check($event,opt)\">\n                       {{opt}}\n                        <span class=\"cr\"><i class=\"cr-icon glyphicon glyphicon-ok\"></i></span>\n                        </label>\n                    </div>\n                </ul>\n               <button (click)=\"previous()\"*ngIf=\"i>0\" >previous</button>\n                <button  (click)=\"next()\" *ngIf=\"i<quizlength\">next</button>\n            </div>\n                <button class=\"btn btn-info\" (click)=\"generatemark()\">Submit</button>\n            </div>\n            <!-- Quiz content -->\n    </div>\n  </div>\n</div>\n\n<div class=\"text-right\" style=\"margin-top: -9%\">\n  <button type=\"button\" class=\"btn btn-info btn-rounded mb-4\" data-toggle=\"modal\" data-target=\"#modalLoginForm\" style=\"font-weight: bold; width: 21%\">Quiz</button>\n</div>"
+module.exports = "<div class=\"modal fade\" id=\"modalLoginForm\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"myModalLabel\"\n  aria-hidden=\"true\">\n  <div class=\"modal-dialog modal-dialog-centered modal-xl\" role=\"document\">\n    <div class=\"modal-content\">\n      <!-- Quiz content -->\n      <div class=\"container\">\n        <div class=\"row justify-content-center m-2 bg-dark text-white\">\n          <div class=\"col align-self-center\">\n            <h4 class=\"p-0 m-2\"> QUIZ</h4>\n          </div>\n          <div class=\"col text-right\">\n            <h4 class=\"p-2 m-2\"><countdown #countdown [config]=\"{leftTime: [quizlength]*60, demand: true}\"  (finished)=\"finishTest()\">$!m!:$!s!</countdown></h4>\n          </div>\n          <div><a title=\"Close\" class=\" pull-right\"><i ng-click=\"CloseModal('modalLoginForm')\" class=\"close close-quiz pull-right\" style=\"cursor: pointer;\" title=\"close\">&times;</i></a></div>\n          <!-- <a title=\"Close\"><i ng-click=\"CloseModal()\" class=\"close pull-right\">&times;</i></a>  -->\n          <!-- <div class=\"col-12\">\n              <div class=\"progress\">\n                  <div class=\"progress-bar w-75\" role=\"progressbar\" aria-valuenow={{i}} aria-valuemin=\"0\" aria-valuemax=\"{{quizlength}}\"></div>\n                </div>\n            \n          </div> -->\n        </div>\n         \n\n        <div class=\"row justify-content-center m-2 \">\n          <div class=\"col-12 m-3 pl-4 text-justify font-weight-bold text-uppercase\">{{(i+1)}} . {{question}}</div>\n          <div class=\"col-6 text-justify mt-2 mb-2  \" *ngFor=\"let opt of option\">\n            <div class=\"form-check\">\n              <label class=\"form-check-label \"><input type=\"radio\" name=\"options\" class=\"form-check-label\"\n                  (click)=\"check($event,opt)\">\n                {{opt}}\n                <span class=\"cr\"><i class=\"cr-icon glyphicon glyphicon-ok\"></i></span>\n              </label>\n            </div>\n          </div>\n        </div>\n        <div class=\"row m-5 justify-content-center\">\n\n          <div class=\"col text-left pl-0\"><button class=\"btn btn-outline-dark \" (click)=\"previous()\"\n              *ngIf=\"i>0\"><i class=\"fas fa-hand-point-left\"></i> Previous</button></div>\n\n\n              <div class=\"col text-center pl-0\" *ngIf=\"showMarks\"><span class=\"score-card\">Your Score: <i class=\"fas fa-hand-point-right\"></i> {{marskScored}}</span></div>\n\n\n          <div class=\"col text-right\"> <button class=\"btn btn-outline-dark \" (click)=\"next()\"\n              *ngIf=\"i<(quizlength-1)\">Next <i class=\"fas fa-hand-point-right\"></i></button></div>\n        </div>\n        <div class=\"row m-5 justify-content-center\">\n          <div class=\"col text-center \"> <button class=\" btn btn-info-dif btn-md \" ng-disabled=all\n              (click)=\"generatemark()\" [disabled]=\"showMarks\" >Submit Test</button> </div>\n        </div>\n      </div>\n      <!-- Quiz content -->\n    </div>\n  </div>\n</div>\n\n<div class=\"text-right\">\n \n    <button class=\"btn btn-info-dif btn-md\" type=\"button\" title=\"Start Quiz\"  data-toggle=\"modal\"\n    data-target=\"#modalLoginForm\" (click)=\"startQuiz()\">Quiz Test</button> \n</div>"
 
 /***/ }),
 
@@ -1008,6 +974,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 /* harmony import */ var _services_quiz_quiz_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../services/quiz/quiz.service */ "./src/app/services/quiz/quiz.service.ts");
 /* harmony import */ var _answerkey__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./answerkey */ "./src/app/ui/quiz/answerkey.ts");
+/* harmony import */ var ngx_countdown__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ngx-countdown */ "./node_modules/ngx-countdown/fesm5/ngx-countdown.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1021,6 +988,7 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 
+
 var QuizComponent = /** @class */ (function () {
     function QuizComponent(route, router, quizServ) {
         this.route = route;
@@ -1028,6 +996,9 @@ var QuizComponent = /** @class */ (function () {
         this.quizServ = quizServ;
         this.topicId = 1;
         this.i = 0;
+        this.quizlength = 1;
+        this.showMarks = false;
+        this.marskScored = "";
         /********************************************************* */
         this.answerkey = [];
         ///////////////////////////////////
@@ -1085,7 +1056,9 @@ var QuizComponent = /** @class */ (function () {
             if (this.answerkey[i].choosen == this.quizQuestions[i].answer)
                 this.marks++;
         }
-        alert("your score is " + JSON.stringify(this.marks));
+        this.marskScored = JSON.stringify(this.marks);
+        this.showMarks = true;
+        // alert("your score is "+JSON.stringify(this.marks));
         // document.writeln("your score is " + this.marks);
     };
     ///////////////////////////////////
@@ -1109,6 +1082,17 @@ var QuizComponent = /** @class */ (function () {
         });
         console.log("result:" + JSON.stringify(result));
     };
+    QuizComponent.prototype.finishTest = function () {
+        this.generatemark();
+    };
+    QuizComponent.prototype.startQuiz = function () {
+        //this.counter.resume();
+        this.counter.begin();
+    };
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"])('countdown'),
+        __metadata("design:type", ngx_countdown__WEBPACK_IMPORTED_MODULE_4__["CountdownComponent"])
+    ], QuizComponent.prototype, "counter", void 0);
     QuizComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'quiz',
@@ -1143,7 +1127,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!-- <button class=\"btn btn-outline-secondary m-1\"> Profile</button> -->\n<button class=\"btn btn-outline-primary\" (click)=\"socialSignIn('google')\">Sign in with Google</button>"
+module.exports = " <!-- <button class=\"btn btn-outline-secondary m-1\"> Profile</button> -->\n<button class=\"btn btn-outline-info\" (click)=\"socialSignIn('google')\"> <i class=\"fab fa-google\"></i> Sign in with Google</button>"
 
 /***/ }),
 
@@ -1201,8 +1185,10 @@ var SigninComponent = /** @class */ (function () {
             u.email = userData.email;
             u.imgUrl = userData.image;
             _this.userService.userDataSubject.next(u);
+            console.log(typeof u);
+            _this.userService.set(JSON.stringify(u));
             // navigate to desktop page..
-            _this.router.navigateByUrl('/userdesktop');
+            _this.router.navigate(['/userdesktop']);
         });
     };
     SigninComponent.prototype.socialSignOut = function (socialPlatform) {
@@ -1218,7 +1204,7 @@ var SigninComponent = /** @class */ (function () {
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-signin',
             template: __webpack_require__(/*! ./signin.component.html */ "./src/app/ui/signin/signin.component.html"),
-            styles: [__webpack_require__(/*! ./signin.component.css */ "./src/app/ui/signin/signin.component.css")]
+            styles: [__webpack_require__(/*! ./signin.component.css */ "./src/app/ui/signin/signin.component.css")],
         }),
         __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["ActivatedRoute"],
             _angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"], angular_6_social_login_v2__WEBPACK_IMPORTED_MODULE_2__["AuthService"], _services_user_user_service__WEBPACK_IMPORTED_MODULE_3__["UserService"]])
@@ -1237,7 +1223,7 @@ var SigninComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "li.active{\n    background-color: salmon ;\n    color:white;\n}\n"
+module.exports = "li.active{\n    background-color: salmon ;\n    color:white;\n}\n.topics > li{\n    outline: none;\n}\n.topics > :first-child{\n    border-top-left-radius: 10px;\n}\n.topics > :last-child{\n    border-bottom-right-radius: 10px;\n\n}"
 
 /***/ }),
 
@@ -1248,7 +1234,7 @@ module.exports = "li.active{\n    background-color: salmon ;\n    color:white;\n
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!-- <div>{{courseDetails.courseId}} </div>\n<div>{{courseDetails.name}} </div>\n<div>{{courseDetails.description}} </div>\n<div *ngFor=\"let topic of courseDetails.topics\">\n    <div ><a routerLink=\"video/{{topic.videoId}}\">{{topic.name}}</a> </div>\n</div>\n<div>\n        <router-outlet></router-outlet>\n</div>\n-->\n\n<div class=\"container row\">\n    <div  class=\"menu\">\n        <ul>\n            <li routerLink=\"topic/{{topic.topicId}}\" routerLinkActive=\"active current\" *ngFor=\"let topic of courseDetails.topics\" style=\"cursor: pointer;\">\n                {{topic.name}}\n            </li>\n            <li routerLink=\"interview/{{courseDetails.name}}\">Interview Questions</li>\n        </ul>\n    </div>\n    <div class=\"col mt-5\" >\n            <router-outlet></router-outlet>\n    </div>\n</div>\n"
+module.exports = "<!-- <div>{{courseDetails.courseId}} </div>\n<div>{{courseDetails.name}} </div>\n<div>{{courseDetails.description}} </div>\n<div *ngFor=\"let topic of courseDetails.topics\">\n    <div ><a routerLink=\"video/{{topic.videoId}}\">{{topic.name}}</a> </div>\n</div>\n<div>\n        <router-outlet></router-outlet>\n</div>\n-->\n\n<div class=\"container \">\n    <div class=\"row\">\n        <div class=\"col-3\">\n\n            <div class=\"menu justify-content-start\">\n                <ul class=\"pl-0 topics\">\n                    <li routerLink=\"topic/{{topic.topicId}}\" routerLinkActive=\"active current\"\n                        *ngFor=\"let topic of courseDetails.topics\" style=\"cursor: pointer;\">\n                        {{topic.name}}\n                    </li>\n                    <li routerLink=\"interview/{{courseDetails.name}}\">Interview Questions</li>\n                </ul>\n            </div>\n        </div>\n        <div class=\"col mt-5 p-0\">\n            <div class=\"col justify-content-start pl-0\">\n                <router-outlet></router-outlet>\n            </div>\n        </div>\n    </div>\n</div>"
 
 /***/ }),
 
@@ -1314,7 +1300,7 @@ var TutorialComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = ".sidebar1 {\n    /* background: #F17153;\n    background: -webkit-linear-gradient(#F17153, #F58D63, #f1ab53);\n    background: -o-linear-gradient(#F17153, #F58D63, #f1ab53);\n    background: -moz-linear-gradient(#F17153, #F58D63, #f1ab53);\n    background: linear-gradient(#F17153, #F58D63, #f1ab53); */\n    background: #101010;\n    /* background: linear-gradient(#6d6b6a, #444241, #0a0a0a); */\n    background: linear-gradient(#0e0e0e, #444342, #6b6666);\n    background: -moz-linear-gradient(#0e0e0e, #444342, #6b6666);\n\n\n    padding: 0px;\n    min-height: 100%;\n}\n.logo {\n    max-height: 130px;\n}\n.logo>img {\n    margin-top: 28px;\n    cursor: pointer;\n    padding: 3px;\n    border: 3px solid #b3b3b3;\n    border-radius: 100%;\n}\n.logo>img:hover{\n    opacity: 0.6;\n}\n.list {\n    color: #fff;\n    list-style: none;\n    padding-left: 0px;\n}\n.list::first-line {\n    color: rgba(255, 255, 255, 0.5);\n}\n.list> li, h5 {\n    padding: 5px 0px 5px 40px;\n}\n.list>li:hover {\n    background-color: rgba(255, 255, 255, 0.2);\n    border-left: 5px solid white;\n    color: rgb(53, 53, 53);\n    \n    /* font-weight: bolder; */\n    padding-left: 35px;\n}\n.main-content{\ntext-align:center;\n}\n.list-a{\n    text-decoration: none;\n    color: #fff;\n}\n.list-a:hover{\n    color: rgb(53, 53, 53);\n    text-decoration: none;\n}"
 
 /***/ }),
 
@@ -1325,7 +1311,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div>\n    <!-- User Desktop.. -->\n    <div>\n        {{userData.id}}\n    </div>\n    <div>\n        {{userData.name}}\n    </div>\n    <div>\n            {{userData.email}}\n    </div>\n    <div>\n        <img src=\"{{userData.imgUrl}}\">\n    </div>\n    \n</div>"
+module.exports = "\n        <div class=\"container-fluid\">\n        <div class=\"row\">\n            <div class=\"col-md-2 col-sm-4 sidebar1\">\n\n                <div class=\"logo\">\n                    <img src=\"{{userData.imgUrl}}\" (click)=\"viewImg(userData.imgUrl)\" class=\"img-responsive center-block  mx-auto d-block\"  alt=\"Logo\">\n                </div>\n                <br>\n                <div class=\"left-navigation\">\n                    <ul class=\"list\">\n                        <h5><strong>{{userData.name}}</strong></h5>\n                        <li><a href=\"#\" class=\"list-a\">Profile<span style=\"font-size:16px;\" class=\"pull-right hidden-xs showopacity glyphicon glyphicon-user\"></span></a>  </li>\n                        <li>\n                                <a href=\"#\" class=\"list-a\">Update Profile<span style=\"font-size:16px;\" class=\"pull-right hidden-xs showopacity glyphicon glyphicon-user\"></span></a>\n                        </li>\n                        <li>\n                                <a href=\"#\" class=\"list-a\">Playlist<span style=\"font-size:16px;\" class=\"pull-right hidden-xs showopacity glyphicon glyphicon-user\"></span></a>\n                        </li>\n                        <li>\n                                <a href=\"#\" class=\"list-a\">Courses<span style=\"font-size:16px;\" class=\"pull-right hidden-xs showopacity glyphicon glyphicon-user\"></span></a>\n                        </li>\n                        <li>\n                                <a href=\"#\" class=\"list-a\">Subscription<span style=\"font-size:16px;\" class=\"pull-right hidden-xs showopacity glyphicon glyphicon-user\"></span></a>\n                        </li>\n                        <li>\n                                <a href=\"#\" class=\"list-a\">Company<span style=\"font-size:16px;\" class=\"pull-right hidden-xs showopacity glyphicon glyphicon-user\"></span></a>\n                        </li>\n                        <li>\n                                <a href=\"#\" class=\"list-a\">Settings<span style=\"font-size:16px;\" class=\"pull-right hidden-xs showopacity glyphicon glyphicon-user\"></span></a>\n                        </li>\n                        <li>\n                                <a href=\"#\" class=\"list-a\">Log Out<span style=\"font-size:16px;\" class=\"pull-right hidden-xs showopacity glyphicon glyphicon-user\"></span></a>\n                        </li>\n               \n                    </ul>\n\n                    <br>\n\n                </div>\n            </div>\n         \n            <div class=\"col-md-10 col-sm-8 main-content\">\n                    <div>\n                            <h1>{{userData.id}} </h1> \n                         </div>\n                         <div>\n                             <h2>{{userData.name}}</h2>\n                         </div>\n                         <div>\n                                 <h3>{{userData.email}}</h3>\n                         </div>\n                         <div >\n                             <img src=\"{{userData.imgUrl}}\"  >\n                         </div>\n            \n            </div>\n\n\n            </div>\n            </div>\n\n      "
 
 /***/ }),
 
@@ -1367,17 +1353,22 @@ var UserDesktopComponent = /** @class */ (function () {
         var _this = this;
         this.route.params.subscribe(function (params) {
             console.log('UserDesktopComponent--');
+            console.log(_this.userData);
         });
-        this.userService.getUserData().subscribe(function (data) {
-            _this.userData = data;
-            console.log('Recived user data-->', _this.userData);
-        });
+        // this.userService.getUserData().subscribe(data => {
+        var data = this.userService.get();
+        this.userData = JSON.parse(data);
+        console.log('Recived user data-->', this.userData);
+        // })
+    };
+    UserDesktopComponent.prototype.viewImg = function (userImg) {
+        window.open(userImg, "_blank");
     };
     UserDesktopComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'user-desktop',
             template: __webpack_require__(/*! ./userdesktop.component.html */ "./src/app/ui/user/desktop/userdesktop.component.html"),
-            styles: [__webpack_require__(/*! ./userdesktop.component.css */ "./src/app/ui/user/desktop/userdesktop.component.css")]
+            styles: [__webpack_require__(/*! ./userdesktop.component.css */ "./src/app/ui/user/desktop/userdesktop.component.css")],
         }),
         __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["ActivatedRoute"],
             _angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"], _services_user_user_service__WEBPACK_IMPORTED_MODULE_2__["UserService"]])
@@ -1396,7 +1387,7 @@ var UserDesktopComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "a{\n    text-decoration: none;\n    color:white;\n    font-weight: bold;\n}\niframe{\n        z-index: 5;\n        box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);\n}\n.design-main{\n\tmargin-left: 40%;\n\twidth: 20%;\n    height: 10px;\n    margin-top: -2.5%;    \n }\n.design-main-inside{\n\twidth:33%; \n\theight:22%; \n\tfloat: left;\n }"
+module.exports = "a{\n    text-decoration: none;\n    color:rgb(5, 5, 5);\n    /* font-weight: bold; */\n}\niframe{\n        z-index: 5;\n        box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);\n}\n.design-main{\n\tmargin-left: 40%;\n\twidth: 20%;\n    height: 10px;\n    margin-top: -2.5%;    \n }\n.design-main-inside{\n\twidth:33%; \n\theight:22%; \n\tfloat: left;\n }\n.btn-info-dif {\n    background-color: transparent;\n    border-radius: 0px;\n    border-top-right-radius: 10px;\n    border-bottom-left-radius: 10px;\n    border: 2px solid  #4bbcd7;\n    box-sizing: border-box;\n    transition: all 0.3s;\n  }\n.btn-info-dif:hover {\n    background-color: #4bbcd7;\n    color: #fff;\n    border-top-right-radius: 0px;\n    border-bottom-left-radius: 0px;\n    border-top-left-radius: 10px;\n    border-bottom-right-radius: 10px;\n    border: 2px solid  #4bbcd7;\n    box-sizing: border-box;\n  }\n.btn-info-dif:hover a {\n    text-decoration: none;\n    color: rgb(252, 252, 252);\n  }"
 
 /***/ }),
 
@@ -1407,7 +1398,7 @@ module.exports = "a{\n    text-decoration: none;\n    color:white;\n    font-wei
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class= \"embed-responsive embed-responsive-16by9\">\n<iframe\n            width=\"680\"\n            height=\"450\"\n            [src]=\"videoId | safe\"\n            frameborder=\"0\"\n            allowfullscreen\n          ></iframe>\n</div>\n\n          <hr>\n          <div class=\"design-main\">\n              <div class=\"bg-danger design-main-inside\"></div>\n              <div class=\"bg-warning design-main-inside\"></div>\n              <div class=\"bg-success design-main-inside\"></div>\n            </div>\n          <br>\n          <button class=\"btn btn-info\">\n            <a href=\"{{projectURL}}\" target=\"_blank\"><i class=\"fas fa-angle-left\"></i><i class=\"fas fa-angle-right\"></i>  Download Sample Code</a>\n           </button>\n  <div>\n    <br>\n    <quiz></quiz>\n  </div>\n  <div>\n    <online-editor [courseId]=\"courseId\" [sampleCode]=\"sampleCode\"></online-editor>\n  </div>\n"
+module.exports = "<div class=\"embed-responsive embed-responsive-16by9\">\n  <iframe width=\"680\" height=\"450\" [src]=\"videoId | safe\" frameborder=\"0\" allowfullscreen></iframe>\n</div>\n\n<hr>\n<div class=\"design-main\">\n  <div class=\"bg-danger design-main-inside\"></div>\n  <div class=\"bg-warning design-main-inside\"></div>\n  <div class=\"bg-success design-main-inside\"></div>\n</div>\n<br>\n<div class=\"container p-0\">\n  <div class=\"row\">\n    <div class=\"col\">\n      <button class=\"btn btn-info-dif btn-md\">\n\n        <a href=\"{{projectURL}}\" target=\"_blank\"><i class=\"fas fa-angle-left\"></i><i class=\"fas fa-angle-right\"></i>\n          Download Sample Code</a>\n      </button>\n    </div>\n    <div class=\"col\">\n      <quiz></quiz>\n    </div>\n  </div>\n</div>\n<div>\n\n\n</div>\n<div>\n  <online-editor [courseId]=\"courseId\" [sampleCode]=\"sampleCode\"></online-editor>\n</div>"
 
 /***/ }),
 
