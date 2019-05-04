@@ -116,10 +116,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ui_signin_signin_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./ui/signin/signin.component */ "./src/app/ui/signin/signin.component.ts");
 /* harmony import */ var _ui_interview_questions_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./ui/interview/questions.component */ "./src/app/ui/interview/questions.component.ts");
 /* harmony import */ var _ui_user_desktop_userdesktop_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./ui/user/desktop/userdesktop.component */ "./src/app/ui/user/desktop/userdesktop.component.ts");
-/* harmony import */ var _services_code_executor_code_executor_service__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./services/code-executor/code-executor.service */ "./src/app/services/code-executor/code-executor.service.ts");
-/* harmony import */ var _tutorial_resolve__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./tutorial.resolve */ "./src/app/tutorial.resolve.ts");
-/* harmony import */ var _services_quiz_quiz_service__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./services/quiz/quiz.service */ "./src/app/services/quiz/quiz.service.ts");
-/* harmony import */ var _services_user_user_service__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./services/user/user.service */ "./src/app/services/user/user.service.ts");
+/* harmony import */ var _ui_searchresults_searchresults_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./ui/searchresults/searchresults.component */ "./src/app/ui/searchresults/searchresults.component.ts");
+/* harmony import */ var _services_code_executor_code_executor_service__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./services/code-executor/code-executor.service */ "./src/app/services/code-executor/code-executor.service.ts");
+/* harmony import */ var _tutorial_resolve__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./tutorial.resolve */ "./src/app/tutorial.resolve.ts");
+/* harmony import */ var _services_quiz_quiz_service__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./services/quiz/quiz.service */ "./src/app/services/quiz/quiz.service.ts");
 /* harmony import */ var _pipes_safepipe__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./pipes/safepipe */ "./src/app/pipes/safepipe.ts");
 /* harmony import */ var angular_6_social_login_v2__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! angular-6-social-login-v2 */ "./node_modules/angular-6-social-login-v2/angular-6-social-login-v2.umd.js");
 /* harmony import */ var angular_6_social_login_v2__WEBPACK_IMPORTED_MODULE_25___default = /*#__PURE__*/__webpack_require__.n(angular_6_social_login_v2__WEBPACK_IMPORTED_MODULE_25__);
@@ -165,14 +165,11 @@ var routes = [
             { path: 'topic/:topicId', component: _ui_video_video_component__WEBPACK_IMPORTED_MODULE_13__["VideoComponent"] },
             { path: 'interview/:courseName', component: _ui_interview_questions_component__WEBPACK_IMPORTED_MODULE_18__["QuestionsComponent"] }
         ],
-        resolve: { courses: _tutorial_resolve__WEBPACK_IMPORTED_MODULE_21__["TutorialResolve"] }
+        resolve: { courses: _tutorial_resolve__WEBPACK_IMPORTED_MODULE_22__["TutorialResolve"] }
     },
-    {
-        path: 'userdesktop', component: _ui_user_desktop_userdesktop_component__WEBPACK_IMPORTED_MODULE_19__["UserDesktopComponent"]
-    },
-    {
-        path: '**', redirectTo: '/course/1/topic/1', pathMatch: 'full'
-    }
+    { path: 'userdesktop', component: _ui_user_desktop_userdesktop_component__WEBPACK_IMPORTED_MODULE_19__["UserDesktopComponent"] },
+    { path: 'searchresults', component: _ui_searchresults_searchresults_component__WEBPACK_IMPORTED_MODULE_20__["SearchResultsComponent"] },
+    { path: '**', redirectTo: '/course/1/topic/1', pathMatch: 'full' }
 ];
 // Configs 
 function getAuthServiceConfigs() {
@@ -191,13 +188,13 @@ var AppModule = /** @class */ (function () {
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
             declarations: [
                 _app_component__WEBPACK_IMPORTED_MODULE_9__["AppComponent"], _ui_header_header_component__WEBPACK_IMPORTED_MODULE_10__["HeaderComponent"], _ui_footer_footer_component__WEBPACK_IMPORTED_MODULE_11__["FooterComponent"], _ui_tutorial_tutorial_component__WEBPACK_IMPORTED_MODULE_12__["TutorialComponent"], _ui_video_video_component__WEBPACK_IMPORTED_MODULE_13__["VideoComponent"], _ui_editor_editor_component__WEBPACK_IMPORTED_MODULE_14__["EditorComponent"],
-                _pipes_safepipe__WEBPACK_IMPORTED_MODULE_24__["SafePipe"], _ui_quiz_quiz_component__WEBPACK_IMPORTED_MODULE_15__["QuizComponent"], _ui_signin_signin_component__WEBPACK_IMPORTED_MODULE_17__["SigninComponent"], _ui_interview_questions_component__WEBPACK_IMPORTED_MODULE_18__["QuestionsComponent"], _ui_user_desktop_userdesktop_component__WEBPACK_IMPORTED_MODULE_19__["UserDesktopComponent"]
+                _pipes_safepipe__WEBPACK_IMPORTED_MODULE_24__["SafePipe"], _ui_quiz_quiz_component__WEBPACK_IMPORTED_MODULE_15__["QuizComponent"], _ui_signin_signin_component__WEBPACK_IMPORTED_MODULE_17__["SigninComponent"], _ui_interview_questions_component__WEBPACK_IMPORTED_MODULE_18__["QuestionsComponent"], _ui_user_desktop_userdesktop_component__WEBPACK_IMPORTED_MODULE_19__["UserDesktopComponent"], _ui_searchresults_searchresults_component__WEBPACK_IMPORTED_MODULE_20__["SearchResultsComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"], ng2_ace_editor__WEBPACK_IMPORTED_MODULE_5__["AceEditorModule"], angular_6_social_login_v2__WEBPACK_IMPORTED_MODULE_25__["SocialLoginModule"], ngx_countdown__WEBPACK_IMPORTED_MODULE_8__["CountdownModule"],
-                _angular_router__WEBPACK_IMPORTED_MODULE_4__["RouterModule"].forRoot(routes), ngx_md__WEBPACK_IMPORTED_MODULE_6__["NgxMdModule"].forRoot(), angular_webstorage_service__WEBPACK_IMPORTED_MODULE_7__["StorageServiceModule"],
+                _angular_router__WEBPACK_IMPORTED_MODULE_4__["RouterModule"].forRoot(routes), _angular_router__WEBPACK_IMPORTED_MODULE_4__["RouterModule"].forChild(routes), ngx_md__WEBPACK_IMPORTED_MODULE_6__["NgxMdModule"].forRoot(), angular_webstorage_service__WEBPACK_IMPORTED_MODULE_7__["StorageServiceModule"],
             ],
-            providers: [_tutorial_resolve__WEBPACK_IMPORTED_MODULE_21__["TutorialResolve"], _services_course_course_service__WEBPACK_IMPORTED_MODULE_16__["CourseService"], _services_code_executor_code_executor_service__WEBPACK_IMPORTED_MODULE_20__["CodeExecutorService"], _services_quiz_quiz_service__WEBPACK_IMPORTED_MODULE_22__["QuizService"], _services_user_user_service__WEBPACK_IMPORTED_MODULE_23__["UserService"], {
+            providers: [_tutorial_resolve__WEBPACK_IMPORTED_MODULE_22__["TutorialResolve"], _services_course_course_service__WEBPACK_IMPORTED_MODULE_16__["CourseService"], _services_code_executor_code_executor_service__WEBPACK_IMPORTED_MODULE_21__["CodeExecutorService"], _services_quiz_quiz_service__WEBPACK_IMPORTED_MODULE_23__["QuizService"], {
                     provide: angular_6_social_login_v2__WEBPACK_IMPORTED_MODULE_25__["AuthServiceConfig"],
                     useFactory: getAuthServiceConfigs
                 }],
@@ -402,6 +399,70 @@ var QuizService = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/services/search/search.service.ts":
+/*!***************************************************!*\
+  !*** ./src/app/services/search/search.service.ts ***!
+  \***************************************************/
+/*! exports provided: SearchService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SearchService", function() { return SearchService; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
+/* harmony import */ var angular_webstorage_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! angular-webstorage-service */ "./node_modules/angular-webstorage-service/bundles/angular-webstorage-service.es5.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __param = (undefined && undefined.__param) || function (paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+};
+
+
+
+
+
+var SearchService = /** @class */ (function () {
+    function SearchService(http, storage) {
+        this.http = http;
+        this.storage = storage;
+        this.searchResultSubject = new rxjs__WEBPACK_IMPORTED_MODULE_2__["Subject"]();
+    }
+    SearchService.prototype.getSearch = function (issueTitle) {
+        var _this = this;
+        var url = 'https://api.stackexchange.com/2.2/search/advanced?order=desc&sort=activity&site=stackoverflow&q=' + issueTitle;
+        console.log('url-->', url);
+        return this.http.get(url).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["tap"])(function (data) {
+            _this.storage.set('search-results', data.items);
+            _this.searchResultSubject.next(data);
+        }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["catchError"])(function (err) { return rxjs__WEBPACK_IMPORTED_MODULE_2__["Observable"].throw(err.json().error); }));
+    };
+    SearchService.prototype.getSearchResults = function () {
+        return this.searchResultSubject.asObservable();
+    };
+    SearchService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
+            providedIn: 'root'
+        }),
+        __param(1, Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Inject"])(angular_webstorage_service__WEBPACK_IMPORTED_MODULE_4__["SESSION_STORAGE"])),
+        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"], Object])
+    ], SearchService);
+    return SearchService;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/services/user/user.service.ts":
 /*!***********************************************!*\
   !*** ./src/app/services/user/user.service.ts ***!
@@ -433,7 +494,7 @@ var __param = (undefined && undefined.__param) || function (paramIndex, decorato
 
 
 
-var STORAGE_KEY = 'pure-awesomeness';
+var STORAGE_KEY = 'user-info';
 var UserService = /** @class */ (function () {
     function UserService(http, storage) {
         this.http = http;
@@ -455,7 +516,9 @@ var UserService = /** @class */ (function () {
         return this.userDataSubject.asObservable();
     };
     UserService = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])(),
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
+            providedIn: 'root'
+        }),
         __param(1, Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Inject"])(angular_webstorage_service__WEBPACK_IMPORTED_MODULE_3__["SESSION_STORAGE"])),
         __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"], Object])
     ], UserService);
@@ -756,7 +819,7 @@ var FooterComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".dropdown-menu{\n    left: 86px;\n    top: 70px;\n}\n.other > ul{\n    list-style-type: none;\n    display: contents;\n}"
+module.exports = ".tag-line{\n    font-size: 80%;\n    padding-left: 18%;\n}\n.dropdown-menu{\n    left: 86px;\n    top: 70px;\n}\n.other > ul{\n    list-style-type: none;\n    display: contents;\n}\n.active-cyan-4 input[type=text]:focus:not([readonly]) {\n    border: 1px solid #17A2B8;\n    box-shadow: none;\n}\n.active-cyan-3 input[type=text] {\n    border: 1px solid #17A2B8;\n\n}\n.active-cyan-4 input[type=text]:focus::-webkit-input-placeholder { \n    transition: opacity 0.45s ease; \n  \t  opacity: 0;\n}\n.active-cyan-4 input[type=text]:focus::-ms-input-placeholder { \n    transition: opacity 0.45s ease; \n  \t  opacity: 0;\n}\n.active-cyan-4 input[type=text]:focus::placeholder { \n    transition: opacity 0.45s ease; \n  \t  opacity: 0;\n}"
 
 /***/ }),
 
@@ -767,7 +830,7 @@ module.exports = ".dropdown-menu{\n    left: 86px;\n    top: 70px;\n}\n.other > 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!-- Top Banner -->\n<nav class=\"navbar navbar-expand-sm bg-dark navbar-dark pt-0 pb-0\" >\n  <div class=\"container\">\n\n    <ul class=\"nav navbar-nav justify-content-start\">\n      <li class=\"nav-item m-1\">\n        <a class=\"nav-link pl-0 text-white\" href=\"#\" >\n          <i class=\"fas fa-mobile-alt\"></i> +91-8123870076</a>\n      </li>\n      <li class=\"nav-item m-1  \">\n        <a class=\"nav-link text-white\" href=\"#\" ><i class=\"far fa-envelope\"></i>\n          contactus@pioneercoders.com</a>\n      </li>\n    </ul>\n    <ul class=\"nav navbar-nav justify-content-end\">\n      <li class=\"nav-item m-1 \">\n        <a class=\"nav-link p-0 text-white\" href=\"#\" ><i class=\"fas fa-map-marker-alt\"></i> BTM\n          layout 1stage, Near\n          Gangothri Circle</a>\n      </li>\n    </ul>\n  </div>\n\n</nav>\n<!-- Top Banner -->\n<!-- 2nd Navbar -->\n<!-- Header -->\n<nav class=\"navbar  navbar-expand-sm  sticky-top m-0 bg-white navbar-light shadow-sm\">\n  <div class=\"container\">\n    <!-- Brand/logo -->\n    <a class=\"navbar-brand \" href=\"#\">\n      <img src=\"../../../assets/pc-logo.png\" alt=\"logo\" class=\"img-box d-inline-flex mr-auto\" width=\"50px\" />\n      <h2 class=\"title text-secondary d-inline-flex\">PioneerCoders</h2>\n      <div class=\"tag-line\">Path to Code, Platform for coders.</div>\n    </a>\n    <!-- Hamburger Icon -->\n    <button class=\"navbar-toggler ml-auto\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\"\n      aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n      <span class=\"navbar-toggler-icon\"></span>\n    </button>\n\n    <!-- Collapsible Menu -->\n    <div class=\"collapse navbar-collapse\" id=\"navbarText\">\n      <ul class=\"nav navbar-nav ml-auto\">\n        <li class=\"nav-item dropdown  position-static\">\n          <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\"\n            aria-haspopup=\"true\" aria-expanded=\"false\" style=\"color:#DC3545\">Video Tutorial\n          </a>\n\n          <!-- MENU DETAILS -->\n          <div class=\"row\">\n            <div class=\"dropdown-menu col-lg-11  col-lg-10 col-lg-offset-2 col-sm-10 col-sm-offset-2 bg-light shadow-lg p-3 mb-5 bg-white rounded \" aria-labelledby=\"navbarDropdown\">\n              <div class=\"container\">\n                <div class=\"row justify-content-around\">\n                  <div *ngFor=\"let courseGrop of courseGropList\">\n                    <div class=\"col\">\n                      <p><strong class=\"sub-menu-heading\">{{courseGrop.key}}</strong></p>\n                      <p>\n                        <a *ngFor=\"let course of courseGrop.value\" routerLink=\"/course/{{course.courseId}}/topic/1\">\n                          {{course.name}}<br>\n                        </a>\n                      </p>\n                    </div>\n                  </div>\n                           \n                  <div >\n                    <div class=\"col\">\n                      <p><strong class=\"sub-menu-heading\">Others</strong></p> \n                       <div class='other'>\n                         <ul>\n                           <li><a href=\"#\">Tersm</a></li>\n                           <li><a href=\"#\">Services</a></li>\n                           <li><a href=\"#\">Contact Us</a></li>\n                         </ul>\n                       </div>\n                    </div>\n                  </div>\n\n                  \n                </div>\n              </div>\n            </div>\n  \n          </div>\n        </li>\n        <li class=\"nav-item justify-content-end\">\n          <app-signin></app-signin>\n        </li>\n      </ul>\n    </div>\n  </div>\n</nav>"
+module.exports = "<!-- Top Banner -->\n<nav class=\"navbar navbar-expand-sm bg-dark navbar-dark pt-0 pb-0\" >\n  <div class=\"container\">\n\n    <ul class=\"nav navbar-nav justify-content-start\">\n      <li class=\"nav-item m-1\">\n        <a class=\"nav-link pl-0 text-white\" href=\"#\" >\n          <i class=\"fas fa-mobile-alt\"></i> +91-8123870076</a>\n      </li>\n      <li class=\"nav-item m-1  \">\n        <a class=\"nav-link text-white\" href=\"#\" ><i class=\"far fa-envelope\"></i>\n          contactus@pioneercoders.com</a>\n      </li>\n    </ul>\n    <ul class=\"nav navbar-nav justify-content-end\">\n      <li class=\"nav-item m-1 \">\n        <a class=\"nav-link p-0 text-white\" href=\"#\" ><i class=\"fas fa-map-marker-alt\"></i> BTM\n          layout 1stage, Near\n          Gangothri Circle</a>\n      </li>\n    </ul>\n  </div>\n\n</nav>\n<!-- Top Banner -->\n<!-- 2nd Navbar -->\n<!-- Header -->\n<nav class=\"navbar  navbar-expand-sm  sticky-top m-0 bg-white navbar-light shadow-sm\">\n  <div class=\"container\">\n    <!-- Brand/logo -->\n    <a class=\"navbar-brand \" href=\"#\">\n      <img src=\"../../../assets/pc-logo.png\" alt=\"logo\" class=\"img-box d-inline-flex mr-auto\" width=\"50px\" />\n      <h2 class=\"title text-secondary d-inline-flex\">PioneerCoders</h2>\n      <div class=\"tag-line\">Path to Code, Platform for coders.</div>\n    </a>\n    <!-- Hamburger Icon -->\n    <button class=\"navbar-toggler ml-auto\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\"\n    aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n    <span class=\"navbar-toggler-icon\"></span>\n  </button>\n\n    <!-- Collapsible Menu -->\n    <div class=\"collapse navbar-collapse\" id=\"navbarText\">\n      <ul class=\"nav navbar-nav ml-auto\">\n        <div class=\"active-cyan-3 active-cyan-4 mb-4\" >\n          <li class=\"row mr-5\">\n            <input type=\"text\" class=\"form-control\" placeholder=\"Enter exception\" [(ngModel)]=\"searchQuery\" (keyup.enter)=\"handleSearch()\"> <i style=\"margin-left: -10%; margin-top: 5% \" class=\"fas fa-search\"></i></li>\n        </div>\n        <li class=\"nav-item dropdown  position-static\">\n          <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\"\n            aria-haspopup=\"true\" aria-expanded=\"false\" style=\"color:#DC3545\">Video Tutorial\n          </a>\n\n          <!-- MENU DETAILS -->\n          <div class=\"row\">\n            <div class=\"dropdown-menu col-lg-11  col-lg-10 col-lg-offset-2 col-sm-10 col-sm-offset-2 bg-light shadow-lg p-3 mb-5 bg-white rounded \" aria-labelledby=\"navbarDropdown\">\n              <div class=\"container\">\n                <div class=\"row justify-content-around\">\n                  <div *ngFor=\"let courseGrop of courseGropList\">\n                    <div class=\"col\">\n                      <p><strong class=\"sub-menu-heading\">{{courseGrop.key}}</strong></p>\n                      <p>\n                        <a *ngFor=\"let course of courseGrop.value\" routerLink=\"/course/{{course.courseId}}/topic/1\">\n                          {{course.name}}<br>\n                        </a>\n                      </p>\n                    </div>\n                  </div>\n                           \n                  <!-- <div >\n                    <div class=\"col\">\n                      <p><strong class=\"sub-menu-heading\">Others</strong></p> \n                       <div class='other'>\n                         <ul>\n                           <li><a href=\"#\">Tersm</a></li>\n                           <li><a href=\"#\">Services</a></li>\n                           <li><a href=\"#\">Contact Us</a></li>\n                         </ul>\n                       </div>\n                    </div>\n                  </div>\n                -->\n\n                  \n                </div>\n              </div>\n            </div>\n  \n          </div>\n        </li>\n        <li class=\"nav-item justify-content-end\">\n          <app-signin></app-signin>\n        </li>\n      </ul>\n    </div>\n  </div>\n</nav>"
 
 /***/ }),
 
@@ -784,8 +847,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _services_course_course_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../services/course/course.service */ "./src/app/services/course/course.service.ts");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _services_search_search_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../services/search/search.service */ "./src/app/services/search/search.service.ts");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_4__);
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -799,12 +863,16 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 
+
 var HeaderComponent = /** @class */ (function () {
-    function HeaderComponent(courseSer, route) {
+    function HeaderComponent(router, courseSer, route, searchSer) {
+        this.router = router;
         this.courseSer = courseSer;
         this.route = route;
+        this.searchSer = searchSer;
         this.courseList = [];
         this.courseGropList = [];
+        this.searchQuery = "";
     }
     HeaderComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -825,9 +893,9 @@ var HeaderComponent = /** @class */ (function () {
             _this.courseGropList = Object.keys(groupedCollection).map(function (key) { return ({ key: key, value: groupedCollection[key] }); });
             console.log('courseGropList', _this.courseGropList);
         });
-        jquery__WEBPACK_IMPORTED_MODULE_3__('body').on('mouseenter mouseleave', '.dropdown', function (e) {
-            var dropdown = jquery__WEBPACK_IMPORTED_MODULE_3__(e.target).closest('.dropdown');
-            var menu = jquery__WEBPACK_IMPORTED_MODULE_3__('.dropdown-menu', dropdown);
+        jquery__WEBPACK_IMPORTED_MODULE_4__('body').on('mouseenter mouseleave', '.dropdown', function (e) {
+            var dropdown = jquery__WEBPACK_IMPORTED_MODULE_4__(e.target).closest('.dropdown');
+            var menu = jquery__WEBPACK_IMPORTED_MODULE_4__('.dropdown-menu', dropdown);
             dropdown.addClass('show');
             menu.addClass('show');
             setTimeout(function () {
@@ -836,13 +904,20 @@ var HeaderComponent = /** @class */ (function () {
             }, 100);
         });
     };
+    HeaderComponent.prototype.handleSearch = function () {
+        var _this = this;
+        console.log('search stated -->', this.searchQuery);
+        this.searchSer.getSearch(this.searchQuery).subscribe(function (data) {
+            _this.router.navigate(['searchresults']);
+        });
+    };
     HeaderComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-header',
             template: __webpack_require__(/*! ./header.component.html */ "./src/app/ui/header/header.component.html"),
             styles: [__webpack_require__(/*! ./header.component.css */ "./src/app/ui/header/header.component.css")]
         }),
-        __metadata("design:paramtypes", [_services_course_course_service__WEBPACK_IMPORTED_MODULE_1__["CourseService"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"]])
+        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"], _services_course_course_service__WEBPACK_IMPORTED_MODULE_1__["CourseService"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"], _services_search_search_service__WEBPACK_IMPORTED_MODULE_3__["SearchService"]])
     ], HeaderComponent);
     return HeaderComponent;
 }());
@@ -1103,6 +1178,90 @@ var QuizComponent = /** @class */ (function () {
             _services_quiz_quiz_service__WEBPACK_IMPORTED_MODULE_2__["QuizService"]])
     ], QuizComponent);
     return QuizComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/ui/searchresults/searchresults.component.css":
+/*!**************************************************************!*\
+  !*** ./src/app/ui/searchresults/searchresults.component.css ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".search-results-numbeirng{\nlist-style: none;\n}"
+
+/***/ }),
+
+/***/ "./src/app/ui/searchresults/searchresults.component.html":
+/*!***************************************************************!*\
+  !*** ./src/app/ui/searchresults/searchresults.component.html ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container\">\n    <div class=\"text-black-50 text-lg-center text-light\"><b>Your Search Results</b></div><br>\n    <!-- <div *ngFor=\"let result of results\"> -->\n        <ol *ngFor=\"let result of results;  let i = index\" class=\"search-results-numbeirng\">\n\n            <li class=\"container\"> {{i+1}}. &emsp;{{result.title}}\n                \n                <a href=\"{{result.link}}\" target=\"_blank\">Click here</a>\n            </li>\n        </ol>\n    <!-- </div> -->\n</div>\n"
+
+/***/ }),
+
+/***/ "./src/app/ui/searchresults/searchresults.component.ts":
+/*!*************************************************************!*\
+  !*** ./src/app/ui/searchresults/searchresults.component.ts ***!
+  \*************************************************************/
+/*! exports provided: SearchResultsComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SearchResultsComponent", function() { return SearchResultsComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _services_search_search_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../services/search/search.service */ "./src/app/services/search/search.service.ts");
+/* harmony import */ var angular_webstorage_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! angular-webstorage-service */ "./node_modules/angular-webstorage-service/bundles/angular-webstorage-service.es5.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __param = (undefined && undefined.__param) || function (paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+};
+
+
+
+
+var SearchResultsComponent = /** @class */ (function () {
+    function SearchResultsComponent(route, router, searchService, storage) {
+        this.route = route;
+        this.router = router;
+        this.searchService = searchService;
+        this.storage = storage;
+    }
+    SearchResultsComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.searchService.getSearchResults().subscribe(function (results) {
+            console.log(' SearchResultsComponent --> results--->', results);
+            _this.results = results.items;
+        });
+        this.results = this.storage.get('search-results');
+    };
+    SearchResultsComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'searchresults',
+            template: __webpack_require__(/*! ./searchresults.component.html */ "./src/app/ui/searchresults/searchresults.component.html"),
+            styles: [__webpack_require__(/*! ./searchresults.component.css */ "./src/app/ui/searchresults/searchresults.component.css")],
+        }),
+        __param(3, Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Inject"])(angular_webstorage_service__WEBPACK_IMPORTED_MODULE_3__["SESSION_STORAGE"])),
+        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["ActivatedRoute"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"], _services_search_search_service__WEBPACK_IMPORTED_MODULE_2__["SearchService"], Object])
+    ], SearchResultsComponent);
+    return SearchResultsComponent;
 }());
 
 
