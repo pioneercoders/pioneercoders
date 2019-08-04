@@ -121,14 +121,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _tutorial_resolve__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./tutorial.resolve */ "./src/app/tutorial.resolve.ts");
 /* harmony import */ var _services_quiz_quiz_service__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./services/quiz/quiz.service */ "./src/app/services/quiz/quiz.service.ts");
 /* harmony import */ var _pipes_safepipe__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./pipes/safepipe */ "./src/app/pipes/safepipe.ts");
-/* harmony import */ var angular_6_social_login_v2__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! angular-6-social-login-v2 */ "./node_modules/angular-6-social-login-v2/angular-6-social-login-v2.umd.js");
-/* harmony import */ var angular_6_social_login_v2__WEBPACK_IMPORTED_MODULE_25___default = /*#__PURE__*/__webpack_require__.n(angular_6_social_login_v2__WEBPACK_IMPORTED_MODULE_25__);
+/* harmony import */ var _services_apps_apps_service__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./services/apps/apps.service */ "./src/app/services/apps/apps.service.ts");
+/* harmony import */ var _ui_apps_apps_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./ui/apps/apps.component */ "./src/app/ui/apps/apps.component.ts");
+/* harmony import */ var _ui_apps_appsdetails_appsdetails_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./ui/apps/appsdetails/appsdetails.component */ "./src/app/ui/apps/appsdetails/appsdetails.component.ts");
+/* harmony import */ var angular_6_social_login_v2__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! angular-6-social-login-v2 */ "./node_modules/angular-6-social-login-v2/angular-6-social-login-v2.umd.js");
+/* harmony import */ var angular_6_social_login_v2__WEBPACK_IMPORTED_MODULE_28___default = /*#__PURE__*/__webpack_require__.n(angular_6_social_login_v2__WEBPACK_IMPORTED_MODULE_28__);
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
+
 
 
 
@@ -169,14 +175,16 @@ var routes = [
     },
     { path: 'userdesktop', component: _ui_user_desktop_userdesktop_component__WEBPACK_IMPORTED_MODULE_19__["UserDesktopComponent"] },
     { path: 'searchresults', component: _ui_searchresults_searchresults_component__WEBPACK_IMPORTED_MODULE_20__["SearchResultsComponent"] },
+    { path: 'apps', component: _ui_apps_apps_component__WEBPACK_IMPORTED_MODULE_26__["AppsComponent"] },
+    { path: 'appsdetails/:id', component: _ui_apps_appsdetails_appsdetails_component__WEBPACK_IMPORTED_MODULE_27__["AppsDetailsComponent"] },
     { path: '**', redirectTo: '/course/1/topic/1', pathMatch: 'full' }
 ];
 // Configs 
 function getAuthServiceConfigs() {
-    var config = new angular_6_social_login_v2__WEBPACK_IMPORTED_MODULE_25__["AuthServiceConfig"]([
+    var config = new angular_6_social_login_v2__WEBPACK_IMPORTED_MODULE_28__["AuthServiceConfig"]([
         {
-            id: angular_6_social_login_v2__WEBPACK_IMPORTED_MODULE_25__["GoogleLoginProvider"].PROVIDER_ID,
-            provider: new angular_6_social_login_v2__WEBPACK_IMPORTED_MODULE_25__["GoogleLoginProvider"]("26197787311-0pmktkpj9m5bts42j5g9u5f5gem4sfrd.apps.googleusercontent.com")
+            id: angular_6_social_login_v2__WEBPACK_IMPORTED_MODULE_28__["GoogleLoginProvider"].PROVIDER_ID,
+            provider: new angular_6_social_login_v2__WEBPACK_IMPORTED_MODULE_28__["GoogleLoginProvider"]("26197787311-0pmktkpj9m5bts42j5g9u5f5gem4sfrd.apps.googleusercontent.com")
         }
     ]);
     return config;
@@ -188,14 +196,15 @@ var AppModule = /** @class */ (function () {
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
             declarations: [
                 _app_component__WEBPACK_IMPORTED_MODULE_9__["AppComponent"], _ui_header_header_component__WEBPACK_IMPORTED_MODULE_10__["HeaderComponent"], _ui_footer_footer_component__WEBPACK_IMPORTED_MODULE_11__["FooterComponent"], _ui_tutorial_tutorial_component__WEBPACK_IMPORTED_MODULE_12__["TutorialComponent"], _ui_video_video_component__WEBPACK_IMPORTED_MODULE_13__["VideoComponent"], _ui_editor_editor_component__WEBPACK_IMPORTED_MODULE_14__["EditorComponent"],
-                _pipes_safepipe__WEBPACK_IMPORTED_MODULE_24__["SafePipe"], _ui_quiz_quiz_component__WEBPACK_IMPORTED_MODULE_15__["QuizComponent"], _ui_signin_signin_component__WEBPACK_IMPORTED_MODULE_17__["SigninComponent"], _ui_interview_questions_component__WEBPACK_IMPORTED_MODULE_18__["QuestionsComponent"], _ui_user_desktop_userdesktop_component__WEBPACK_IMPORTED_MODULE_19__["UserDesktopComponent"], _ui_searchresults_searchresults_component__WEBPACK_IMPORTED_MODULE_20__["SearchResultsComponent"]
+                _pipes_safepipe__WEBPACK_IMPORTED_MODULE_24__["SafePipe"], _ui_quiz_quiz_component__WEBPACK_IMPORTED_MODULE_15__["QuizComponent"], _ui_signin_signin_component__WEBPACK_IMPORTED_MODULE_17__["SigninComponent"], _ui_interview_questions_component__WEBPACK_IMPORTED_MODULE_18__["QuestionsComponent"], _ui_user_desktop_userdesktop_component__WEBPACK_IMPORTED_MODULE_19__["UserDesktopComponent"], _ui_searchresults_searchresults_component__WEBPACK_IMPORTED_MODULE_20__["SearchResultsComponent"],
+                _ui_apps_apps_component__WEBPACK_IMPORTED_MODULE_26__["AppsComponent"], _ui_apps_appsdetails_appsdetails_component__WEBPACK_IMPORTED_MODULE_27__["AppsDetailsComponent"]
             ],
             imports: [
-                _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"], ng2_ace_editor__WEBPACK_IMPORTED_MODULE_5__["AceEditorModule"], angular_6_social_login_v2__WEBPACK_IMPORTED_MODULE_25__["SocialLoginModule"], ngx_countdown__WEBPACK_IMPORTED_MODULE_8__["CountdownModule"],
+                _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"], ng2_ace_editor__WEBPACK_IMPORTED_MODULE_5__["AceEditorModule"], angular_6_social_login_v2__WEBPACK_IMPORTED_MODULE_28__["SocialLoginModule"], ngx_countdown__WEBPACK_IMPORTED_MODULE_8__["CountdownModule"],
                 _angular_router__WEBPACK_IMPORTED_MODULE_4__["RouterModule"].forRoot(routes), _angular_router__WEBPACK_IMPORTED_MODULE_4__["RouterModule"].forChild(routes), ngx_md__WEBPACK_IMPORTED_MODULE_6__["NgxMdModule"].forRoot(), angular_webstorage_service__WEBPACK_IMPORTED_MODULE_7__["StorageServiceModule"],
             ],
-            providers: [_tutorial_resolve__WEBPACK_IMPORTED_MODULE_22__["TutorialResolve"], _services_course_course_service__WEBPACK_IMPORTED_MODULE_16__["CourseService"], _services_code_executor_code_executor_service__WEBPACK_IMPORTED_MODULE_21__["CodeExecutorService"], _services_quiz_quiz_service__WEBPACK_IMPORTED_MODULE_23__["QuizService"], {
-                    provide: angular_6_social_login_v2__WEBPACK_IMPORTED_MODULE_25__["AuthServiceConfig"],
+            providers: [_tutorial_resolve__WEBPACK_IMPORTED_MODULE_22__["TutorialResolve"], _services_course_course_service__WEBPACK_IMPORTED_MODULE_16__["CourseService"], _services_code_executor_code_executor_service__WEBPACK_IMPORTED_MODULE_21__["CodeExecutorService"], _services_quiz_quiz_service__WEBPACK_IMPORTED_MODULE_23__["QuizService"], _services_apps_apps_service__WEBPACK_IMPORTED_MODULE_25__["AppsService"], {
+                    provide: angular_6_social_login_v2__WEBPACK_IMPORTED_MODULE_28__["AuthServiceConfig"],
                     useFactory: getAuthServiceConfigs
                 }],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_9__["AppComponent"]]
@@ -243,6 +252,47 @@ var SafePipe = /** @class */ (function () {
         __metadata("design:paramtypes", [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["DomSanitizer"]])
     ], SafePipe);
     return SafePipe;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/services/apps/apps.service.ts":
+/*!***********************************************!*\
+  !*** ./src/app/services/apps/apps.service.ts ***!
+  \***********************************************/
+/*! exports provided: AppsService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppsService", function() { return AppsService; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var AppsService = /** @class */ (function () {
+    function AppsService(http) {
+        this.http = http;
+    }
+    AppsService.prototype.getAppsData = function () {
+        return this.http.get("https://codingkrishna.github.io/api/apps.json");
+    };
+    AppsService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])(),
+        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]])
+    ], AppsService);
+    return AppsService;
 }());
 
 
@@ -603,6 +653,156 @@ var TutorialResolve = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/ui/apps/apps.component.css":
+/*!********************************************!*\
+  !*** ./src/app/ui/apps/apps.component.css ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".card{\n    /* width:18rem;\n    height:18rem; */\n    cursor: pointer;\n}\n.shadow-sm{\n    box-shadow: 0px 0px 60px 5px  rgba(0, 0, 0, 0.4) !important; \n}\n"
+
+/***/ }),
+
+/***/ "./src/app/ui/apps/apps.component.html":
+/*!*********************************************!*\
+  !*** ./src/app/ui/apps/apps.component.html ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container mt-5\">\n    <div class=\"row\">\n        <div class=\"col-sm-1\"></div>\n        <div class=\"card shadow-sm col-sm\" *ngFor=\"let app of appslist\">\n            <img class=\"img-fluid\" routerLink = \"/appsdetails/{{app.id}}\" src=\"../../../assets/images/apps_images/{{app.imgUrls[0]}}\" alt=\"farm-ease\">\n        </div>\n        <div class=\"col-sm-1\"></div>\n        <!--<div class=\"card shadow-sm col-sm\">\n            <img class=\"img-fluid mt-3\" routerLink = \"/farmcard\" src=\"../../../assets/images/Regnant-Portal-App/regnant_logo.webp\" alt=\"farm-ease\">\n        </div>\n        <div class=\"col-sm-1\"></div>\n        <div class=\"card shadow-sm col-sm\">\n            <img class=\"img-fluid\" routerLink = '/smartcard' src=\"../../../assets/images/the smart chits/logo.jpg\" alt=\"farm-ease\">\n        </div> -->\n    </div>\n</div>\n<!-- <div class=\"container mt-5 mb-5\">\n    <div class=\"row\">\n            <div class=\"col-sm-1\"></div>\n        <div class=\"card shadow-sm col-sm\">\n            <img class=\"img-fluid mt-5\" src=\"../../../assets/images/LearnApp/logo.png\" alt=\"farm-ease\">\n        </div>\n        <div class=\"col-sm-2\"></div>\n        <div class=\"card shadow-sm col-sm\">\n            <img class=\"img-fluid mt-3\" routerLink = \"/farmcard\" src=\"../../../assets/images/Regnant-Portal-App/regnant_logo.webp\" alt=\"farm-ease\">\n        </div>\n        <div class=\"col-sm-2\"></div>\n    </div>\n</div> -->"
+
+/***/ }),
+
+/***/ "./src/app/ui/apps/apps.component.ts":
+/*!*******************************************!*\
+  !*** ./src/app/ui/apps/apps.component.ts ***!
+  \*******************************************/
+/*! exports provided: AppsComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppsComponent", function() { return AppsComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _services_apps_apps_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../services/apps/apps.service */ "./src/app/services/apps/apps.service.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var AppsComponent = /** @class */ (function () {
+    function AppsComponent(appsService) {
+        this.appsService = appsService;
+    }
+    AppsComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.apps = this.appsService.getAppsData();
+        this.apps.subscribe(function (data) {
+            _this.appslist = data.apps;
+            //  console.log(this.appslist);
+        });
+    };
+    AppsComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'apps',
+            template: __webpack_require__(/*! ./apps.component.html */ "./src/app/ui/apps/apps.component.html"),
+            styles: [__webpack_require__(/*! ./apps.component.css */ "./src/app/ui/apps/apps.component.css")]
+        }),
+        __metadata("design:paramtypes", [_services_apps_apps_service__WEBPACK_IMPORTED_MODULE_1__["AppsService"]])
+    ], AppsComponent);
+    return AppsComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/ui/apps/appsdetails/appsdetails.component.css":
+/*!***************************************************************!*\
+  !*** ./src/app/ui/apps/appsdetails/appsdetails.component.css ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".carousel-indicators li{\n    height: 10px !important;\n    width: 10px !important;\n    border-radius: 50%;\n}\n.farm{\n    font-family: cfont;\n    font-size: 3rem;\n    font-weight: 550;\n    color: #186607;\n}\n.desc{\n    font-family: Georgia, 'Times New Roman', Times, serif;\n    font-size: 1rem;\n    color: green;\n    font-style: italic;\n}"
+
+/***/ }),
+
+/***/ "./src/app/ui/apps/appsdetails/appsdetails.component.html":
+/*!****************************************************************!*\
+  !*** ./src/app/ui/apps/appsdetails/appsdetails.component.html ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container mt-5 mb-5\">\n        <div class=\"card shadow-lg mb-5\">\n            <div class=\"row no-gutters\">\n                <div class=\"col-md-7 mt-3 ml-3\">\n                    <div id=\"slides\" class=\"carousel slide\" data-ride=\"carousel\">\n                        <ol class=\"carousel-indicators\">\n                            <li data-target=\"#slides\" data-slide-to=\"0\" class=\"active\"></li>\n                            <li data-target=\"#slides\" data-slide-to=\"1\"></li>\n                            <!-- <li data-target=\"#slides\" data-slide-to=\"2\"></li>\n                            <li data-target=\"#slides\" data-slide-to=\"3\"></li> -->\n                            <!-- <li data-target=\"#slides\" data-slide-to=\"4\"></li>\n                            <li data-target=\"#slides\" data-slide-to=\"5\"></li> -->\n                        </ol>\n                        <div class=\"carousel-inner\">\n                            <div class=\"carousel-item active\">\n                                <img class=\"img-fluid d-block w-100\" src=\"../../../../assets/images/apps_images/{{app.imgUrls[1]}}\"\n                                    alt=\"First slide\">\n                            </div>\n                            <div class=\"carousel-item\">\n                                <img class=\"img-fluid d-block w-100\" src=\"../../../../assets/images/apps_images/{{app.imgUrls[2]}}\"\n                                    alt=\"Second slide\">\n                            </div>\n                            <!-- <div class=\"carousel-item\">\n                                <img class=\"img-fluid d-block w-100\" src=\"../../../../assets/images/apps_images/{{app.imgUrls[1]}}\"\n                                    alt=\"Third slide\">\n                            </div> -->\n                            <!-- <div class=\"carousel-item\">\n                                <img class=\"img-fluid d-block w-100\" src=\"../../../../assets/images/Farm-eaze/Slot.png\"\n                                    alt=\"fourth slide\">\n                            </div> -->\n                            <!-- <div class=\"carousel-item\">\n                                <img class=\"img-fluid d-block w-100\" src=\"../../assets/images/GT/Register-Employee.png\"\n                                    alt=\"fifth slide\">\n                            </div>\n                            <div class=\"carousel-item\">\n                                <img class=\"img-fluid d-block w-100\" src=\"../../assets/images/GT/Select-task.png\"\n                                    alt=\"sixth slide\">\n                            </div> -->\n                        </div>\n                        <a class=\"carousel-control-prev\" href=\"#slides\" role=\"button\" data-slide=\"prev\">\n                            <!-- <span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span> -->\n                            <span class=\"sr-only\">Previous</span>\n                        </a>\n                        <a class=\"carousel-control-next\" href=\"#slides\" role=\"button\" data-slide=\"next\">\n                            <!-- <span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span> -->\n                            <span class=\"sr-only\">Next</span>\n                        </a>\n                    </div>\n                </div>\n                <div class=\"col-md\">\n                    <div class=\"card-body\">\n                        <h5 class=\"card-title farm\">{{app.name}}</h5>\n                        <p class=\"card-text desc\">{{app.description}}</p>\n                    </div>\n                </div>\n                <div class=\"col-12 mt-3\">\n                    <div class=\"card-footer\">\n                        <h5>Specifications</h5>\n                        <p class=\"card-text\" *ngFor=\"let spec of app.specifications\">{{spec}}</p>\n                    </div>\n                </div>\n            </div>\n        </div>\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/ui/apps/appsdetails/appsdetails.component.ts":
+/*!**************************************************************!*\
+  !*** ./src/app/ui/apps/appsdetails/appsdetails.component.ts ***!
+  \**************************************************************/
+/*! exports provided: AppsDetailsComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppsDetailsComponent", function() { return AppsDetailsComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _services_apps_apps_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../services/apps/apps.service */ "./src/app/services/apps/apps.service.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var AppsDetailsComponent = /** @class */ (function () {
+    function AppsDetailsComponent(routerpara, appsService) {
+        this.routerpara = routerpara;
+        this.appsService = appsService;
+    }
+    AppsDetailsComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.routerpara.paramMap.subscribe(function (data) {
+            var id = data.get('id');
+            console.log("Selected App Id:", id);
+            _this.appsService.getAppsData().subscribe(function (data) {
+                _this.app = data.apps.filter(function (data) { return data.id == id; })[0];
+                console.log("App Details ==> ", _this.app);
+            });
+        });
+    };
+    AppsDetailsComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'apps-details',
+            template: __webpack_require__(/*! ./appsdetails.component.html */ "./src/app/ui/apps/appsdetails/appsdetails.component.html"),
+            styles: [__webpack_require__(/*! ./appsdetails.component.css */ "./src/app/ui/apps/appsdetails/appsdetails.component.css")]
+        }),
+        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["ActivatedRoute"], _services_apps_apps_service__WEBPACK_IMPORTED_MODULE_2__["AppsService"]])
+    ], AppsDetailsComponent);
+    return AppsDetailsComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/ui/editor/editor.component.css":
 /*!************************************************!*\
   !*** ./src/app/ui/editor/editor.component.css ***!
@@ -819,7 +1019,7 @@ var FooterComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".tag-line{\n    font-size: 80%;\n    padding-left: 18%;\n}\n.dropdown-menu{\n    left: 86px;\n    top: 70px;\n}\n.other > ul{\n    list-style-type: none;\n    display: contents;\n}\n.active-cyan-4 input[type=text]:focus:not([readonly]) {\n    border: 1px solid #17A2B8;\n    box-shadow: none;\n}\n.active-cyan-3 input[type=text] {\n    border: 1px solid #17A2B8;\n\n}\n.active-cyan-4 input[type=text]:focus::-webkit-input-placeholder { \n    transition: opacity 0.45s ease; \n  \t  opacity: 0;\n}\n.active-cyan-4 input[type=text]:focus::-ms-input-placeholder { \n    transition: opacity 0.45s ease; \n  \t  opacity: 0;\n}\n.active-cyan-4 input[type=text]:focus::placeholder { \n    transition: opacity 0.45s ease; \n  \t  opacity: 0;\n}"
+module.exports = ".tag-line{\n    font-size: 80%;\n    padding-left: 18%;\n}\n.dropdown-menu{\n    left: 86px;\n    top: 70px;\n}\n.other > ul{\n    list-style-type: none;\n    display: contents;\n}\n.active-cyan-4 input[type=text]:focus:not([readonly]) {\n    border: 1px solid #17A2B8;\n    box-shadow: none;\n}\n.active-cyan-3 input[type=text] {\n    border: 1px solid #17A2B8;\n\n}\n.active-cyan-4 input[type=text]:focus::-webkit-input-placeholder { \n    transition: opacity 0.45s ease; \n  \t  opacity: 0;\n}\n.active-cyan-4 input[type=text]:focus::-ms-input-placeholder { \n    transition: opacity 0.45s ease; \n  \t  opacity: 0;\n}\n.active-cyan-4 input[type=text]:focus::placeholder { \n    transition: opacity 0.45s ease; \n  \t  opacity: 0;\n}\n.apps{\n    padding-top: 5px;\n    padding-left: 10px;\n    padding-right: 10px;\n}\n"
 
 /***/ }),
 
@@ -830,7 +1030,7 @@ module.exports = ".tag-line{\n    font-size: 80%;\n    padding-left: 18%;\n}\n.d
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!-- Top Banner -->\n<nav class=\"navbar navbar-expand-sm bg-dark navbar-dark pt-0 pb-0\" >\n  <div class=\"container\">\n\n    <ul class=\"nav navbar-nav justify-content-start\">\n      <li class=\"nav-item m-1\">\n        <a class=\"nav-link pl-0 text-white\" href=\"#\" >\n          <i class=\"fas fa-mobile-alt\"></i> +91-8123870076</a>\n      </li>\n      <li class=\"nav-item m-1  \">\n        <a class=\"nav-link text-white\" href=\"#\" ><i class=\"far fa-envelope\"></i>\n          contactus@pioneercoders.com</a>\n      </li>\n    </ul>\n    <ul class=\"nav navbar-nav justify-content-end\">\n      <li class=\"nav-item m-1 \">\n        <a class=\"nav-link p-0 text-white\" href=\"#\" ><i class=\"fas fa-map-marker-alt\"></i> BTM\n          layout 1stage, Near\n          Gangothri Circle</a>\n      </li>\n    </ul>\n  </div>\n\n</nav>\n<!-- Top Banner -->\n<!-- 2nd Navbar -->\n<!-- Header -->\n<nav class=\"navbar  navbar-expand-sm  sticky-top m-0 bg-white navbar-light shadow-sm\">\n  <div class=\"container\">\n    <!-- Brand/logo -->\n    <a class=\"navbar-brand \" href=\"#\">\n      <img src=\"../../../assets/pc-logo.png\" alt=\"logo\" class=\"img-box d-inline-flex mr-auto\" width=\"50px\" />\n      <h2 class=\"title text-secondary d-inline-flex\">PioneerCoders</h2>\n      <div class=\"tag-line\">Path to Code, Platform for coders.</div>\n    </a>\n    <!-- Hamburger Icon -->\n    <button class=\"navbar-toggler ml-auto\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\"\n    aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n    <span class=\"navbar-toggler-icon\"></span>\n  </button>\n\n    <!-- Collapsible Menu -->\n    <div class=\"collapse navbar-collapse\" id=\"navbarText\">\n      <ul class=\"nav navbar-nav ml-auto\">\n        <div class=\"active-cyan-3 active-cyan-4 mb-4\" >\n          <li class=\"row mr-5\">\n            <input type=\"text\" class=\"form-control\" placeholder=\"Enter exception\" [(ngModel)]=\"searchQuery\" (keyup.enter)=\"handleSearch()\"> <i style=\"margin-left: -10%; margin-top: 5% \" class=\"fas fa-search\"></i></li>\n        </div>\n        <li class=\"nav-item dropdown  position-static\">\n          <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\"\n            aria-haspopup=\"true\" aria-expanded=\"false\" style=\"color:#DC3545\">Video Tutorial\n          </a>\n\n          <!-- MENU DETAILS -->\n          <div class=\"row\">\n            <div class=\"dropdown-menu col-lg-11  col-lg-10 col-lg-offset-2 col-sm-10 col-sm-offset-2 bg-light shadow-lg p-3 mb-5 bg-white rounded \" aria-labelledby=\"navbarDropdown\">\n              <div class=\"container\">\n                <div class=\"row justify-content-around\">\n                  <div *ngFor=\"let courseGrop of courseGropList\">\n                    <div class=\"col\">\n                      <p><strong class=\"sub-menu-heading\">{{courseGrop.key}}</strong></p>\n                      <p>\n                        <a *ngFor=\"let course of courseGrop.value\" routerLink=\"/course/{{course.courseId}}/topic/1\">\n                          {{course.name}}<br>\n                        </a>\n                      </p>\n                    </div>\n                  </div>\n                           \n                  <!-- <div >\n                    <div class=\"col\">\n                      <p><strong class=\"sub-menu-heading\">Others</strong></p> \n                       <div class='other'>\n                         <ul>\n                           <li><a href=\"#\">Tersm</a></li>\n                           <li><a href=\"#\">Services</a></li>\n                           <li><a href=\"#\">Contact Us</a></li>\n                         </ul>\n                       </div>\n                    </div>\n                  </div>\n                -->\n\n                  \n                </div>\n              </div>\n            </div>\n  \n          </div>\n        </li>\n        <li class=\"nav-item justify-content-end\">\n          <app-signin></app-signin>\n        </li>\n      </ul>\n    </div>\n  </div>\n</nav>"
+module.exports = "<!-- Top Banner -->\n<nav class=\"navbar navbar-expand-sm bg-dark navbar-dark pt-0 pb-0\" >\n  <div class=\"container\">\n\n    <ul class=\"nav navbar-nav justify-content-start\">\n      <li class=\"nav-item m-1\">\n        <a class=\"nav-link pl-0 text-white\" href=\"#\" >\n          <i class=\"fas fa-mobile-alt\"></i> +91-8123870076</a>\n      </li>\n      <li class=\"nav-item m-1  \">\n        <a class=\"nav-link text-white\" href=\"#\" ><i class=\"far fa-envelope\"></i>\n          contactus@pioneercoders.com</a>\n      </li>\n    </ul>\n    <ul class=\"nav navbar-nav justify-content-end\">\n      <li class=\"nav-item m-1 \">\n        <a class=\"nav-link p-0 text-white\" href=\"#\" ><i class=\"fas fa-map-marker-alt\"></i> BTM\n          layout 1stage, Near\n          Gangothri Circle</a>\n      </li>\n    </ul>\n  </div>\n\n</nav>\n<!-- Top Banner -->\n<!-- 2nd Navbar -->\n<!-- Header -->\n<nav class=\"navbar  navbar-expand-sm  sticky-top m-0 bg-white navbar-light shadow-sm\">\n  <div class=\"container\">\n    <!-- Brand/logo -->\n    <a class=\"navbar-brand \" href=\"#\">\n      <img src=\"../../../assets/pc-logo.png\" alt=\"logo\" class=\"img-box d-inline-flex mr-auto\" width=\"50px\" />\n      <h2 class=\"title text-secondary d-inline-flex\">PioneerCoders</h2>\n      <div class=\"tag-line\">Path to Code, Platform for coders.</div>\n    </a>\n    <!-- Hamburger Icon -->\n    <button class=\"navbar-toggler ml-auto\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\"\n    aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n    <span class=\"navbar-toggler-icon\"></span>\n  </button>\n\n    <!-- Collapsible Menu -->\n    <div class=\"collapse navbar-collapse\" id=\"navbarText\">\n      <ul class=\"nav navbar-nav ml-auto\">\n        <div class=\"active-cyan-3 active-cyan-4 mb-4\" >\n          <li class=\"row mr-5\">\n            <input type=\"text\" class=\"form-control\" placeholder=\"Enter exception\" [(ngModel)]=\"searchQuery\" (keyup.enter)=\"handleSearch()\"> <i style=\"margin-left: -10%; margin-top: 5% \" class=\"fas fa-search\"></i></li>\n        </div>\n        <li class=\"nav-item dropdown  position-static\">\n          <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\"\n            aria-haspopup=\"true\" aria-expanded=\"false\" style=\"color:#DC3545\">Video Tutorial\n          </a>\n\n          <!-- MENU DETAILS -->\n          <div class=\"row\">\n            <div class=\"dropdown-menu col-lg-11  col-lg-10 col-lg-offset-2 col-sm-10 col-sm-offset-2 bg-light shadow-lg p-3 mb-5 bg-white rounded \" aria-labelledby=\"navbarDropdown\">\n              <div class=\"container\">\n                <div class=\"row justify-content-around\">\n                  <div *ngFor=\"let courseGrop of courseGropList\">\n                    <div class=\"col\">\n                      <p><strong class=\"sub-menu-heading\">{{courseGrop.key}}</strong></p>\n                      <p>\n                        <a *ngFor=\"let course of courseGrop.value\" routerLink=\"/course/{{course.courseId}}/topic/1\">\n                          {{course.name}}<br>\n                        </a>\n                      </p>\n                    </div>\n                  </div>\n                           \n                  <!-- <div >\n                    <div class=\"col\">\n                      <p><strong class=\"sub-menu-heading\">Others</strong></p> \n                       <div class='other'>\n                         <ul>\n                           <li><a href=\"#\">Tersm</a></li>\n                           <li><a href=\"#\">Services</a></li>\n                           <li><a href=\"#\">Contact Us</a></li>\n                         </ul>\n                       </div>\n                    </div>\n                  </div>\n                -->\n\n                  \n                </div>\n              </div>\n            </div>\n  \n          </div>\n        </li>\n        <li class=\"nav-item position-static apps\">\n          <a routerLink=\"/apps\"> Apps</a>\n      </li>\n        <li class=\"nav-item justify-content-end\">\n          <app-signin></app-signin>\n        </li>\n        \n      </ul>\n    </div>\n  </div>\n</nav>"
 
 /***/ }),
 
