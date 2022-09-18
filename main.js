@@ -102,15 +102,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 /* harmony import */ var ng2_ace_editor__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng2-ace-editor */ "./node_modules/ng2-ace-editor/index.js");
-/* harmony import */ var ngx_md__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ngx-md */ "./node_modules/ngx-md/fesm5/ngx-md.js");
-/* harmony import */ var angular_webstorage_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! angular-webstorage-service */ "./node_modules/angular-webstorage-service/bundles/angular-webstorage-service.es5.js");
-/* harmony import */ var ngx_countdown__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ngx-countdown */ "./node_modules/ngx-countdown/fesm5/ngx-countdown.js");
-/* harmony import */ var _angular_material_tabs__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/material/tabs */ "./node_modules/@angular/material/esm5/tabs.es5.js");
-/* harmony import */ var _angular_material_slider__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/material/slider */ "./node_modules/@angular/material/esm5/slider.es5.js");
-/* harmony import */ var _angular_material_input__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/material/input */ "./node_modules/@angular/material/esm5/input.es5.js");
-/* harmony import */ var _angular_material_chips__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/material/chips */ "./node_modules/@angular/material/esm5/chips.es5.js");
-/* harmony import */ var _angular_material_icon__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/material/icon */ "./node_modules/@angular/material/esm5/icon.es5.js");
-/* harmony import */ var _angular_material_autocomplete__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @angular/material/autocomplete */ "./node_modules/@angular/material/esm5/autocomplete.es5.js");
+/* harmony import */ var angular_webstorage_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! angular-webstorage-service */ "./node_modules/angular-webstorage-service/bundles/angular-webstorage-service.es5.js");
+/* harmony import */ var ngx_countdown__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ngx-countdown */ "./node_modules/ngx-countdown/fesm5/ngx-countdown.js");
+/* harmony import */ var _angular_material_tabs__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/material/tabs */ "./node_modules/@angular/material/esm5/tabs.es5.js");
+/* harmony import */ var _angular_material_slider__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/material/slider */ "./node_modules/@angular/material/esm5/slider.es5.js");
+/* harmony import */ var _angular_material_input__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/material/input */ "./node_modules/@angular/material/esm5/input.es5.js");
+/* harmony import */ var _angular_material_chips__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/material/chips */ "./node_modules/@angular/material/esm5/chips.es5.js");
+/* harmony import */ var _angular_material_icon__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/material/icon */ "./node_modules/@angular/material/esm5/icon.es5.js");
+/* harmony import */ var _angular_material_autocomplete__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/material/autocomplete */ "./node_modules/@angular/material/esm5/autocomplete.es5.js");
+/* harmony import */ var ngx_markdown__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ngx-markdown */ "./node_modules/ngx-markdown/fesm5/ngx-markdown.js");
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
 /* harmony import */ var _ui_header_header_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./ui/header/header.component */ "./src/app/ui/header/header.component.ts");
 /* harmony import */ var _ui_footer_footer_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./ui/footer/footer.component */ "./src/app/ui/footer/footer.component.ts");
@@ -285,9 +285,9 @@ var AppModule = /** @class */ (function () {
                 _ui_user_desktop_mytasks_mytasks_component__WEBPACK_IMPORTED_MODULE_48__["MytasksComponent"], _ui_user_desktop_onlinetest_onlinetest_component__WEBPACK_IMPORTED_MODULE_49__["OnlinetestComponent"], _ui_user_desktop_online_test_results_online_test_results_component__WEBPACK_IMPORTED_MODULE_50__["OnlineTestResultsComponent"], _ui_user_desktop_booked_events_booked_events_component__WEBPACK_IMPORTED_MODULE_52__["BookedEventsComponent"], _ui_user_desktop_refer_friends_refer_friends_component__WEBPACK_IMPORTED_MODULE_53__["ReferFriendsComponent"], _ui_user_desktop_settings_settings_component__WEBPACK_IMPORTED_MODULE_54__["SettingsComponent"], _ui_user_desktop_quiz_results_quiz_results_component__WEBPACK_IMPORTED_MODULE_51__["QuizResultsComponent"], _ui_user_desktop_perchasedcourses_perchasedcourses_component__WEBPACK_IMPORTED_MODULE_55__["PerchasedcoursesComponent"]
             ],
             imports: [
-                _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"], ng2_ace_editor__WEBPACK_IMPORTED_MODULE_5__["AceEditorModule"], angular_6_social_login_v2__WEBPACK_IMPORTED_MODULE_34__["SocialLoginModule"], ngx_countdown__WEBPACK_IMPORTED_MODULE_8__["CountdownModule"], _angular_material_tabs__WEBPACK_IMPORTED_MODULE_9__["MatTabsModule"], _angular_material_slider__WEBPACK_IMPORTED_MODULE_10__["MatSliderModule"], _angular_material_input__WEBPACK_IMPORTED_MODULE_11__["MatInputModule"], _angular_material_chips__WEBPACK_IMPORTED_MODULE_12__["MatChipsModule"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_13__["MatIconModule"],
-                _angular_router__WEBPACK_IMPORTED_MODULE_4__["RouterModule"].forRoot(routes), _angular_router__WEBPACK_IMPORTED_MODULE_4__["RouterModule"].forChild(routes), ngx_md__WEBPACK_IMPORTED_MODULE_6__["NgxMdModule"].forRoot(), angular_webstorage_service__WEBPACK_IMPORTED_MODULE_7__["StorageServiceModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_35__["BrowserAnimationsModule"], _progress_kendo_angular_inputs__WEBPACK_IMPORTED_MODULE_36__["InputsModule"], _progress_kendo_angular_buttons__WEBPACK_IMPORTED_MODULE_37__["ButtonsModule"], _progress_kendo_angular_dialog__WEBPACK_IMPORTED_MODULE_38__["DialogsModule"],
-                _angular_forms__WEBPACK_IMPORTED_MODULE_2__["ReactiveFormsModule"], _angular_material_autocomplete__WEBPACK_IMPORTED_MODULE_14__["MatAutocompleteModule"]
+                _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"], ng2_ace_editor__WEBPACK_IMPORTED_MODULE_5__["AceEditorModule"], angular_6_social_login_v2__WEBPACK_IMPORTED_MODULE_34__["SocialLoginModule"], ngx_countdown__WEBPACK_IMPORTED_MODULE_7__["CountdownModule"], _angular_material_tabs__WEBPACK_IMPORTED_MODULE_8__["MatTabsModule"], _angular_material_slider__WEBPACK_IMPORTED_MODULE_9__["MatSliderModule"], _angular_material_input__WEBPACK_IMPORTED_MODULE_10__["MatInputModule"], _angular_material_chips__WEBPACK_IMPORTED_MODULE_11__["MatChipsModule"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_12__["MatIconModule"],
+                _angular_router__WEBPACK_IMPORTED_MODULE_4__["RouterModule"].forRoot(routes), _angular_router__WEBPACK_IMPORTED_MODULE_4__["RouterModule"].forChild(routes), angular_webstorage_service__WEBPACK_IMPORTED_MODULE_6__["StorageServiceModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_35__["BrowserAnimationsModule"], _progress_kendo_angular_inputs__WEBPACK_IMPORTED_MODULE_36__["InputsModule"], _progress_kendo_angular_buttons__WEBPACK_IMPORTED_MODULE_37__["ButtonsModule"], _progress_kendo_angular_dialog__WEBPACK_IMPORTED_MODULE_38__["DialogsModule"],
+                _angular_forms__WEBPACK_IMPORTED_MODULE_2__["ReactiveFormsModule"], _angular_material_autocomplete__WEBPACK_IMPORTED_MODULE_13__["MatAutocompleteModule"], ngx_markdown__WEBPACK_IMPORTED_MODULE_14__["MarkdownModule"].forRoot({ loader: _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClient"] }),
             ],
             providers: [_tutorial_resolve__WEBPACK_IMPORTED_MODULE_27__["TutorialResolve"], _services_course_course_service__WEBPACK_IMPORTED_MODULE_22__["CourseService"], _services_code_executor_code_executor_service__WEBPACK_IMPORTED_MODULE_26__["CodeExecutorService"], _services_quiz_quiz_service__WEBPACK_IMPORTED_MODULE_28__["QuizService"], _services_interview_interview_service__WEBPACK_IMPORTED_MODULE_31__["InterviewQuestionsService"], _services_apps_apps_service__WEBPACK_IMPORTED_MODULE_30__["AppsService"], {
                     provide: angular_6_social_login_v2__WEBPACK_IMPORTED_MODULE_34__["AuthServiceConfig"],
@@ -1161,7 +1161,7 @@ module.exports = ".row-padding {\n  padding-left: 6.6%;\n  padding-right: 6.6%;\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!-- FOOTER -->\n\n<footer>\n  <div class=\"footer-bottom row-padding\">\n      <div class=\"clear-fix\">\n          <div class=\"copyright\">Pioneer Coders<span></span> 2020 . All Rights Reserved</div>\n          <nav class=\"footer-nav\">\n              <ul class=\"nav clear-fix\">\n                  <li>\n                      <a href=\"index.html\">Home</a>\n                  </li>\n                  <li>\n                      <a href=\"courses-grid.html\">Courses</a>\n                  </li>\n                  <li>\n                      <a href=\"contact-us.html\">Contact</a>\n                  </li>\n              </ul>\n          </nav>\n      </div>\n  </div>\n</footer>\n<!-- FOOTER -->"
+module.exports = "<!-- FOOTER -->\n\n<footer>\n  <div class=\"footer-bottom row-padding\">\n      <div class=\"clear-fix\">\n          <div class=\"copyright\">Pionner Coders<span></span> 2022 . All Rights Reserved</div>\n          <!-- <nav class=\"footer-nav\">\n              <ul class=\"nav clear-fix\">\n                  <li>\n                      <a href=\"index.html\">Home</a>\n                  </li>\n                  <li>\n                      <a href=\"courses-grid.html\">Courses</a>\n                  </li>\n                  <li>\n                      <a href=\"contact-us.html\">Contact</a>\n                  </li>\n              </ul>\n          </nav> -->\n      </div>\n  </div>\n</footer>\n<!-- FOOTER -->"
 
 /***/ }),
 
@@ -1225,7 +1225,7 @@ module.exports = ".row-height{\n    height: 2.5rem;\n}\n.bg-color-r{\n    backgr
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!-- Top Banner -->\n<div class=\"bg-dark text-white row-height\">\n    <div class=\"row row-padding\">\n        <div class=\"col-sm-6\">\n            <div class=\"float-left row-height m-2 font-alinement\">\n                <i class=\"fa fa-phone bg-color-r p-1 icon-radius dsp-inline-block mr-1\"></i>\n                <span>91-8123870076</span>\n            </div>\n            <div class=\"float-left row-height m-2\">\n                <i class=\"fa fa-envelope bg-color-r p-1 icon-radius mr-1\"></i>\n                <span>contactus@pionnercoders.com</span>\n            </div>\n        </div>\n        <div class=\"col-sm-6 pr-0\">\n            <!-- <div class=\"float-right bg-color-s row-height social-icon-width text-center pt-2\"><i\n                  class=\"fa fa-shopping-cart\"></i></div> -->\n            <div class=\"float-right row-height social-icon-width text-center\">\n                <app-signin></app-signin>\n            </div>\n            <!-- <div class=\"float-right bg-color-p row-height social-icon-width text-center pt-2\"><i\n                    class=\"fa fa-user login-icon\"></i></div> -->\n\n            <!-- <div class=\"float-right bg-color-w row-height social-icon-width text-center pt-2\"><i\n                  class=\"share-icon fa fa-share-alt\"></i></div> -->\n            <!-- <div class=\"float-right bg-color-r row-height social-icon-width text-center pt-2\"><i\n                    class=\"fa fa-search\"></i></div> -->\n        </div>\n    </div>\n</div>\n\n<!-- <nav class=\"navbar navbar-expand-sm bg-dark navbar-dark pt-0 pb-0\" >\n  <div class=\"container\">\n\n    <ul class=\"nav navbar-nav justify-content-start\">\n      <li class=\"nav-item m-1\">\n        <a class=\"nav-link pl-0 text-white\" href=\"#\" >\n          <i class=\"fas fa-mobile-alt\"></i> +91-8123870076</a>\n      </li>\n      <li class=\"nav-item m-1  \">\n        <a class=\"nav-link text-white\" href=\"#\" ><i class=\"far fa-envelope\"></i>\n          contactus@pioneercoders.com</a>\n      </li>\n    </ul>\n    <ul class=\"nav navbar-nav justify-content-end\">\n      <li class=\"nav-item m-1 \">\n        <a class=\"nav-link p-0 text-white\" href=\"#\" ><i class=\"fas fa-map-marker-alt\"></i> BTM\n          layout 1stage, Near\n          Gangothri Circle</a>\n      </li>\n    </ul>\n  </div>\n\n</nav> -->\n<!-- Top Banner -->\n\n<!-- 2nd Navbar -->\n<!-- Header -->\n\n<div class=\"sticky-wrapper row-padding sticky-menu-boader\">\n    <div class=\"sticky-menu\">\n        <div class=\"grid-row clear-fix\">\n            <!-- logo -->\n            <a href=\"#\" class=\"logo\">\n                <img src=\"/src/assets/pc-logo.png\" alt=\"\">\n                <h4>Pioneer Coders</h4>\n            </a>\n            <!-- / logo -->\n            <nav class=\"main-nav\">\n                <ul class=\"nav clear-fix\">\n                    <li class=\"megamenu\">\n                        <a class=\"active\" href=\"#\">Video Tutorial</a>\n\n                        <ul class=\"clear-fix\">\n                            <li *ngFor=\"let courseGrop of courseGropList\">\n                                <div class=\"header-megamenu\">{{courseGrop.key}}</div>\n                                <ul class=\"nav flex-column line-height\">\n                                    <li class=\"nav-item\" *ngFor=\"let course of courseGrop.value\">\n                                        <a class=\"text-color\" routerLink=\"/course/{{course.courseId}}/topic/1\">\n                                            {{course.name}}\n                                        </a>\n                                    </li>\n                                </ul>\n                            </li>\n                        </ul>\n                        <!-- / sub mega menu -->\n                    </li>\n                    <li>\n                        <a class=\"text-color\" routerLink=\"/apps\">Live Projects</a>\n                    </li>\n                    <!-- <li>\n                        <a class=\"text-color\" href=\"#\">Consulting</a>\n                    </li> -->\n                </ul>\n            </nav>\n        </div>\n    </div>\n</div>"
+module.exports = "<!-- Top Banner -->\n<div class=\"bg-dark text-white row-height\">\n    <div class=\"row row-padding\">\n        <div class=\"col-sm-6\">\n            <div class=\"float-left row-height m-2 font-alinement\">\n                <i class=\"fa fa-phone bg-color-r p-1 icon-radius dsp-inline-block mr-1\"></i>\n                <span>91-8123870076</span>\n            </div>\n            <div class=\"float-left row-height m-2\">\n                <i class=\"fa fa-envelope bg-color-r p-1 icon-radius mr-1\"></i>\n                <span>contactus@pionnercoders.com</span>\n            </div>\n        </div>\n        <div class=\"col-sm-6 pr-0\">\n            <!-- <div class=\"float-right bg-color-s row-height social-icon-width text-center pt-2\"><i\n                  class=\"fa fa-shopping-cart\"></i></div> -->\n            <!-- <div class=\"float-right row-height social-icon-width text-center\">\n                <app-signin></app-signin>\n            </div> -->\n            <!-- <div class=\"float-right bg-color-p row-height social-icon-width text-center pt-2\"><i\n                    class=\"fa fa-user login-icon\"></i></div> -->\n\n            <!-- <div class=\"float-right bg-color-w row-height social-icon-width text-center pt-2\"><i\n                  class=\"share-icon fa fa-share-alt\"></i></div> -->\n            <!-- <div class=\"float-right bg-color-r row-height social-icon-width text-center pt-2\"><i\n                    class=\"fa fa-search\"></i></div> -->\n        </div>\n    </div>\n</div>\n\n<!-- <nav class=\"navbar navbar-expand-sm bg-dark navbar-dark pt-0 pb-0\" >\n  <div class=\"container\">\n\n    <ul class=\"nav navbar-nav justify-content-start\">\n      <li class=\"nav-item m-1\">\n        <a class=\"nav-link pl-0 text-white\" href=\"#\" >\n          <i class=\"fas fa-mobile-alt\"></i> +91-8123870076</a>\n      </li>\n      <li class=\"nav-item m-1  \">\n        <a class=\"nav-link text-white\" href=\"#\" ><i class=\"far fa-envelope\"></i>\n          contactus@pioneercoders.com</a>\n      </li>\n    </ul>\n    <ul class=\"nav navbar-nav justify-content-end\">\n      <li class=\"nav-item m-1 \">\n        <a class=\"nav-link p-0 text-white\" href=\"#\" ><i class=\"fas fa-map-marker-alt\"></i> BTM\n          layout 1stage, Near\n          Gangothri Circle</a>\n      </li>\n    </ul>\n  </div>\n\n</nav> -->\n<!-- Top Banner -->\n\n<!-- 2nd Navbar -->\n<!-- Header -->\n\n<div class=\"sticky-wrapper row-padding sticky-menu-boader\">\n    <div class=\"sticky-menu\">\n        <div class=\"grid-row clear-fix\">\n            <!-- logo -->\n            <a href=\"#\" class=\"logo\">\n                <img src=\"/src/assets/pc-logo.png\" alt=\"\">\n                <h4>Pionner Coders</h4>\n            </a>\n            <!-- / logo -->\n            <nav class=\"main-nav\">\n                <ul class=\"nav clear-fix\">\n                    <li class=\"megamenu\">\n                        <a class=\"active\" href=\"#\">Video Tutorial</a>\n\n                        <ul class=\"clear-fix\">\n                            <li *ngFor=\"let courseGrop of courseGropList\">\n                                <div class=\"header-megamenu\">{{courseGrop.key}}</div>\n                                <ul class=\"nav flex-column line-height\">\n                                    <li class=\"nav-item\" *ngFor=\"let course of courseGrop.value\">\n                                        <a class=\"text-color\" routerLink=\"/course/{{course.courseId}}/topic/1\">\n                                            {{course.name}}\n                                        </a>\n                                    </li>\n                                </ul>\n                            </li>\n                        </ul>\n                        <!-- / sub mega menu -->\n                    </li>\n                    <!-- <li>\n                        <a class=\"text-color\" routerLink=\"/apps\">Live Projects</a>\n                    </li> -->\n                    <!-- <li>\n                        <a class=\"text-color\" href=\"#\">Consulting</a>\n                    </li> -->\n                </ul>\n            </nav>\n        </div>\n    </div>\n</div>"
 
 /***/ }),
 
@@ -1744,7 +1744,7 @@ module.exports = "li.active{\n    background-color: salmon ;\n    color:white;\n
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!-- <div>{{courseDetails.courseId}} </div>\n<div>{{courseDetails.name}} </div>\n<div>{{courseDetails.description}} </div>\n<div *ngFor=\"let topic of courseDetails.topics\">\n    <div ><a routerLink=\"video/{{topic.videoId}}\">{{topic.name}}</a> </div>\n</div>\n<div>\n        <router-outlet></router-outlet>\n</div>\n-->\n\n<!-- online editer button -->\n<p><button class=\"button float-right btn-mrg-top scroll-top\"  *ngIf=\"!opened\" (click)=\"open(true)\">Online <br>Editer</button></p>\n      <kendo-window [top]=\"126\" [left]=\"390\" [width]=\"840\" title=\"Code Editer\" [(state)]=\"WindowState\" *ngIf=\"opened\" (close)=\"close(false)\">\n        <p style=\"text-align: center;\"><online-editor [courseId]=\"courseId\" [sampleCode]=\"sampleCode\"></online-editor></p>\n      </kendo-window>      \n<!-- online editer button -->\n<!-- vedios -->\n    <div class=\"row row-padding\">\n        <div class=\"col-3\">\n            <div class=\"menu justify-content-start\">\n                <ul class=\"pl-0 topics\">\n                    <li routerLink=\"topic/{{topic.topicId}}\" routerLinkActive=\"active current\"\n                        *ngFor=\"let topic of courseDetails.topics\" style=\"cursor: pointer;\">\n                        {{topic.name}}\n                    </li>\n                </ul>\n            </div>\n        </div>\n        <div class=\"col-9 p-0\">\n            <div class=\"col justify-content-start p-0\">\n                <router-outlet></router-outlet>\n            </div>\n        </div>\n    </div> "
+module.exports = "<!-- <div>{{courseDetails.courseId}} </div>\n<div>{{courseDetails.name}} </div>\n<div>{{courseDetails.description}} </div>\n<div *ngFor=\"let topic of courseDetails.topics\">\n    <div ><a routerLink=\"video/{{topic.videoId}}\">{{topic.name}}</a> </div>\n</div>\n<div>\n        <router-outlet></router-outlet>\n</div>\n-->\n\n<!-- online editer button -->\n<!-- <p><button class=\"button float-right btn-mrg-top scroll-top\"  *ngIf=\"!opened\" (click)=\"open(true)\">Online <br>Editer</button></p>\n       <kendo-window [top]=\"126\" [left]=\"390\" [width]=\"840\" title=\"Code Editer\" [(state)]=\"WindowState\" *ngIf=\"opened\" (close)=\"close(false)\">\n        <p style=\"text-align: center;\"><online-editor [courseId]=\"courseId\" [sampleCode]=\"sampleCode\"></online-editor></p>\n      </kendo-window>       -->\n<!-- online editer button -->\n<!-- vedios -->\n    <div class=\"row row-padding\">\n        <div class=\"col-3\">\n            <div class=\"menu justify-content-start\">\n                <ul class=\"pl-0 topics\">\n                    <li routerLink=\"topic/{{topic.topicId}}\" routerLinkActive=\"active current\"\n                        *ngFor=\"let topic of courseDetails.topics\" style=\"cursor: pointer;\">\n                        {{topic.name}}\n                    </li>\n                </ul>\n            </div>\n        </div>\n        <div class=\"col-9 p-0\">\n            <div class=\"col justify-content-start p-0\">\n                <router-outlet></router-outlet>\n            </div>\n        </div>\n    </div> "
 
 /***/ }),
 
@@ -3094,7 +3094,7 @@ module.exports = "a{\n    text-decoration: none;\n    color:rgb(5, 5, 5);\n    /
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"embed-responsive embed-responsive-16by9\" *ngIf=\"videoId !== ''\">\n  <iframe width=\"680\" height=\"450\" [src]=\"videoId | safe\" frameborder=\"0\" allowfullscreen></iframe>\n</div>\n<div class=\"design-main\" *ngIf=\"videoId !== ''\">\n  <hr>\n  <div class=\"bg-danger design-main-inside\"></div>\n  <div class=\"bg-warning design-main-inside\"></div>\n  <div class=\"bg-success design-main-inside\"></div>\n</div>\n<br>\n<div *ngIf=\"videoId !== ''\">\n  <div class=\"row mb-5\">\n    <div class=\"col-6\">\n      <button class=\"btn btn-info-dif btn-md\">\n        <a href=\"{{projectURL}}\" target=\"_blank\">\n          Download Sample Code</a>\n      </button>\n    </div>\n    <div class=\"col-6\">\n      <quiz></quiz>\n    </div>\n  </div>\n</div>\n<div class=\"mrg-top\">\n  <ngx-md [path]=\"textTutorialURL\" class=\"panel\"></ngx-md>\n</div>\n<!-- <div>\n  <online-editor [courseId]=\"courseId\" [sampleCode]=\"sampleCode\"></online-editor>\n</div> -->"
+module.exports = "<div class=\"embed-responsive embed-responsive-16by9\" *ngIf=\"videoId !== ''\">\n  <iframe width=\"680\" height=\"450\" [src]=\"videoId | safe\" frameborder=\"0\" allowfullscreen></iframe>\n</div>\n<div class=\"design-main\" *ngIf=\"videoId !== ''\">\n  <hr>\n  <div class=\"bg-danger design-main-inside\"></div>\n  <div class=\"bg-warning design-main-inside\"></div>\n  <div class=\"bg-success design-main-inside\"></div>\n</div>\n<br>\n<!-- <div *ngIf=\"videoId !== ''\">\n  <div class=\"row mb-5\">\n    <div class=\"col-6\">\n      <button class=\"btn btn-info-dif btn-md\">\n        <a href=\"{{projectURL}}\" target=\"_blank\">\n          Download Sample Code</a>\n      </button>\n    </div>\n    <div class=\"col-6\">\n      <quiz></quiz>\n    </div>\n  </div>\n</div> -->\n<!-- <div class=\"mrg-top\">\n  <div markdown [src]=\"textTutorialURL\"></div>\n</div> -->\n<!-- <div>\n  <online-editor [courseId]=\"courseId\" [sampleCode]=\"sampleCode\"></online-editor>\n</div> -->"
 
 /***/ }),
 
@@ -3111,6 +3111,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _services_course_course_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../services/course/course.service */ "./src/app/services/course/course.service.ts");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _editor_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../editor.js */ "./src/editor.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3120,6 +3121,7 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
 
 
 
@@ -3158,6 +3160,11 @@ var VideoComponent = /** @class */ (function () {
         this.projectURL = topic.projectUrl;
         this.sampleCode = topic.code;
     };
+    VideoComponent.prototype.ngAfterViewInit = function () {
+        setTimeout(function () {
+            _editor_js__WEBPACK_IMPORTED_MODULE_3__["reloadEditor"]();
+        }, 1000);
+    };
     VideoComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'tutorial-video',
@@ -3170,6 +3177,56 @@ var VideoComponent = /** @class */ (function () {
     return VideoComponent;
 }());
 
+
+
+/***/ }),
+
+/***/ "./src/editor.js":
+/*!***********************!*\
+  !*** ./src/editor.js ***!
+  \***********************/
+/*! exports provided: reloadEditor, loadEditor, getAceObject */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "reloadEditor", function() { return reloadEditor; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "loadEditor", function() { return loadEditor; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getAceObject", function() { return getAceObject; });
+function reloadEditor() {
+    console.log('reloaed the ace ..')
+    let editorsEle = document.querySelectorAll("[id*='editor']")
+    console.log('editorsEle ==>', editorsEle)
+    for (let edEle of editorsEle) {
+      let id = edEle.id;
+      console.log('edEle==>', id);
+      if(id && id.indexOf('css')<= 0){
+        loadEditor(id)
+      }
+    }
+
+  }
+
+  function loadEditor (editorId){
+    console.log('editorId----------->', editorId)
+    //let editorId = 'editor';
+
+    let ele = document.getElementById(editorId);
+    var editor = ace.edit(editorId);
+    editor.setTheme("ace/theme/monokai");
+    editor.getSession().setMode("ace/mode/javascript");
+    editor.getSession().setOptions({ tabSize: 2, useSoftTabs: true, readOnly: false, showLineNumbers: true,showGutter: true, });
+    var code = editor.getValue();
+    console.log('Code to execute ==>', code);
+    let dv = document.createElement('div');
+    dv.innerHTML = `<button onClick="runCode('${editorId}')" style="position: absolute;
+    bottom: 0;
+    right: 0; ">Run</button>`
+    ele.appendChild(dv);
+  }
+function getAceObject() {
+    return ace;
+}
 
 
 /***/ }),
@@ -3225,7 +3282,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/hyalamat/pc/pc_dev_workspace/pc-app/src/main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! /Users/hyalamat/pc/pc-ui-app/src/main.ts */"./src/main.ts");
 
 
 /***/ })

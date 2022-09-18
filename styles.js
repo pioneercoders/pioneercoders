@@ -703,11 +703,11 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/hyalamat/pc/pc_dev_workspace/pc-app/node_modules/@angular/material/prebuilt-themes/indigo-pink.css */"./node_modules/@angular/material/prebuilt-themes/indigo-pink.css");
-__webpack_require__(/*! /Users/hyalamat/pc/pc_dev_workspace/pc-app/node_modules/@progress/kendo-theme-default/dist/all.css */"./node_modules/@progress/kendo-theme-default/dist/all.css");
-__webpack_require__(/*! /Users/hyalamat/pc/pc_dev_workspace/pc-app/src/styles.css */"./src/styles.css");
-__webpack_require__(/*! /Users/hyalamat/pc/pc_dev_workspace/pc-app/node_modules/bootstrap/dist/css/bootstrap.min.css */"./node_modules/bootstrap/dist/css/bootstrap.min.css");
-module.exports = __webpack_require__(/*! /Users/hyalamat/pc/pc_dev_workspace/pc-app/node_modules/font-awesome/css/font-awesome.css */"./node_modules/font-awesome/css/font-awesome.css");
+__webpack_require__(/*! /Users/hyalamat/pc/pc-ui-app/node_modules/@angular/material/prebuilt-themes/indigo-pink.css */"./node_modules/@angular/material/prebuilt-themes/indigo-pink.css");
+__webpack_require__(/*! /Users/hyalamat/pc/pc-ui-app/node_modules/@progress/kendo-theme-default/dist/all.css */"./node_modules/@progress/kendo-theme-default/dist/all.css");
+__webpack_require__(/*! /Users/hyalamat/pc/pc-ui-app/src/styles.css */"./src/styles.css");
+__webpack_require__(/*! /Users/hyalamat/pc/pc-ui-app/node_modules/bootstrap/dist/css/bootstrap.min.css */"./node_modules/bootstrap/dist/css/bootstrap.min.css");
+module.exports = __webpack_require__(/*! /Users/hyalamat/pc/pc-ui-app/node_modules/font-awesome/css/font-awesome.css */"./node_modules/font-awesome/css/font-awesome.css");
 
 
 /***/ })

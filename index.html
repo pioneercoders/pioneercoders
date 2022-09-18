@@ -9,8 +9,8 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name = "keywords" content = "Java, Servlet, JDBC, JS, Javascript, HTML, CSS " />
-  <meta name = "description" content = "E-learning, Technical Skills assessment, Hiring platform for IT aspirants and organisations." />
-  <meta name = "revised" content = "Pioneercoders, 1/2/2020" />
+  <meta name = "description" content = "Video tutorial for java , servlets, jdbc and js." />
+  <meta name = "revised" content = "Pioneercoders, 18/4/2019" />
 
   <link rel="icon" type="image/x-icon" href="assets/pc-logo.png">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/themes/prism.min.css" rel="stylesheet" />
@@ -29,7 +29,7 @@
   <link rel="stylesheet" href="../src/css/md-components.css">
   <link rel="stylesheet" href="../src/css/cart.css">
   <link rel="stylesheet" href="../src/css/student.css">
-
+  
 </head>
 <body>
   <app-root></app-root>
@@ -51,13 +51,16 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.7/ace.js" type="text/javascript" charset="utf-8"></script>
 <script>
-    var editor = ace.edit("editor");
+   function runCode(editorId){
+      console.log("Run code from JS", editorId)
+      var editor = ace.edit(editorId);
+      var code = editor.getValue();
+      console.log(code)
+    }
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/prism.min.js" type="text/javascript" charset="utf-8"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/components/prism-java.min.js"
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/components/prism-java.min.js" 
   type="text/javascript" charset="utf-8"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/components/prism-python.min.js" type="text/javascript" charset="utf-8"></script>
-  
-  
+
 <script type="text/javascript" src="runtime.js"></script><script type="text/javascript" src="polyfills.js"></script><script type="text/javascript" src="styles.js"></script><script type="text/javascript" src="scripts.js"></script><script type="text/javascript" src="vendor.js"></script><script type="text/javascript" src="main.js"></script></body>
 </html>
