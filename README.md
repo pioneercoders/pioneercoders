@@ -1,2 +1,2 @@
 # Pioneer Coders online
-Pioneer coders is online learning patform for new programmers.
+Pioneer coders is E-learning, Technical Skills assessment, Hiring platform for IT aspirants and organisations.
