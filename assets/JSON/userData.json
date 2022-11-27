@@ -1,0 +1,68 @@
+{
+    "userData": [
+        {
+            "name": "Venkata Ramya N",
+            "email": "venkataramyanalam145@gmail.com",
+            "languagesKnown": "Telugu,English,kannada,Hindi,Marati",
+            "gender": "Male",
+            "moboleNo": "897714719",
+            "meternalStatus": "Single"
+        }
+    ],
+    "PerminantAddress":"D.No:4-76, Near Poleramma Temple Kapula Bazar Cherukupalli(MD&PO) Guntur(DT), AndhraPradesh, Pincode:522309",
+    "PresentAddress":"#26 ReddyPg, Near balaji Temple,1st main,1st cross, BTM 2nd Stage BTMLayout, Bangalore, Pincode:560076",
+    "sscDetails": [
+        {
+            "Board": "SSC ",
+            "institute": " St.joseph Public School ",
+            "University": "Secondary School Certificate",
+            "YearOfPass": "2010",
+            "Percentage": " 79%"
+        }
+    ],
+    "pucDetails": [
+        {
+            "Board": "SBTET ",
+            "institute": " Bapatla polytechnic college ",
+            "University": "Ambedkar University Delhi ",
+            "YearOfPass": "2013",
+            "Percentage": " 81%"
+        }
+    ],
+    "digreeDetails":[
+        {
+            "Board": "JNTUK ",
+            "institute": " Swarnandra college of engineering & Tech ",
+            "University": "Jawaharlal Nehru Technological University",
+            "YearOfPass": "2016",
+            "Percentage": " 64%"
+        }
+    ],
+    "experienceDetails": [
+        {
+            "employer": "phani",
+            "currentstatus": " currentEmployer",
+            "duration": "nov2016 to nov 2018 ",
+            "designation": " Software",
+            "jobProfile": " Developer",
+            "experience":" 2years",
+            "currentsalary": " 15000"
+        }
+    ],
+    "projectDetails": [
+        {
+            "Name": "PionnerCoders",
+            "Discription": "Lorem ipsum  Labore exercitationem repudiandae consequuntur, odit aliquam sit, consequatur dolorum. Inventore dolorem maiores maxime placeat eum.",
+            "Duration": "1.5Months",
+            "Responsebilities": "TotalUI",
+            "Domain": "AngularJs"
+        }
+    ],
+    "skileset":[
+        {
+            "TechnicalSills": "Java, HTML5, CSS3, JavaScript",
+            "FrameWorks":"AngularJs, Spring, Hibernate"
+        }
+    ]
+
+}
