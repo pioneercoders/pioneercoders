@@ -1,48 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c82ffb17-a619-436d-a5df-efd6750c113c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/assets/3rdpartylicenses.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/JSON/a.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/JSON/userData.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/OpenSans-Bold.fc10ccf11a61bac919b9.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/OpenSans-Light.ec993defe70da9dbbc3f.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/OpenSans-Regular.9ccd5e1b1dbea150336d.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Roboto-Bold.17451a4c1cd55e33ac57.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Roboto-Light.ce61b8b68994802f2e55.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Roboto-Medium.0fcd45fbfc419c42c8b9.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Roboto-Regular.6bede58e856278b0f8f1.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/c-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/coding-krishna-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/coding-logo.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/apps_images/angularjs_training_logo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/apps_images/corejava_logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/apps_images/gt-benefits.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/apps_images/gt-home.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/apps_images/gt-log.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/apps_images/java_logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/apps_images/smart-chit-benefits.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/apps_images/smart-chit-home.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/apps_images/smart-chit-log.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/apps_images/wallpaper.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/parallax_pattern-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/user-cog-solid.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/main-es2017.770d7fface861ef995bb.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/main-es5.770d7fface861ef995bb.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/parallax_pattern-1.8346de0f90672f01f60e.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/polyfills-es2017.74ca0bfa632654d30b8d.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/polyfills-es5.4d5175042aed2a468f89.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/runtime-es2017.a835d0e6f4724033f0ae.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/runtime-es5.a835d0e6f4724033f0ae.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles.4d1f398ac46dc9a104ad.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/c-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/c-logo1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coding-log.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coding-logo.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="c82ffb17-a619-436d-a5df-efd6750c113c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,9 +17,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/codin/kmss_projects/pc/code_base/pioneercoders"
+    "last_opened_file_path": "C:/Users/codin/kmss_projects/idx/code_base/gatnix-api-app"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
